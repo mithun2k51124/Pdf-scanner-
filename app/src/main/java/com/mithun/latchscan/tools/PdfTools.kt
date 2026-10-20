@@ -144,6 +144,7 @@ object PdfTools {
                         }
                         val bmp = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888)
                         bmp.eraseColor(Color.WHITE)
+                        bmp.setHasAlpha(false) // opaque pages -> no extra alpha mask in the PDF
                         page.render(bmp, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
                         try {
                             block(i, r.pageCount, bmp, page.width, page.height)

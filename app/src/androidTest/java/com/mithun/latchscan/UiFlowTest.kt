@@ -10,7 +10,6 @@ import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
-import androidx.test.espresso.Espresso
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.GrantPermissionRule
@@ -48,6 +47,11 @@ class UiFlowTest {
         bmp?.let { b -> File(screensDir, "$name.png").outputStream().use { b.compress(Bitmap.CompressFormat.PNG, 100, it) } }
     }
 
+    private fun back() {
+        rule.runOnUiThread { rule.activity.onBackPressedDispatcher.onBackPressed() }
+        rule.waitForIdle()
+    }
+
     private fun waitForText(text: String, timeout: Long = 10_000) {
         rule.waitUntil(timeout) { rule.onAllNodes(hasText(text, substring = true)).fetchSemanticsNodes().isNotEmpty() }
     }
@@ -67,6 +71,15 @@ class UiFlowTest {
 
     @Test
     fun walkThroughEveryScreen() {
+        try {
+            walk()
+        } catch (t: Throwable) {
+            shot("zz_failure")
+            throw t
+        }
+    }
+
+    private fun walk() {
         // Start from a clean library.
         runBlocking { LatchApp.instance.repository.docs.value.forEach { LatchApp.instance.deleteDocument(it) } }
         rule.waitForIdle()
@@ -80,7 +93,7 @@ class UiFlowTest {
             rule.onNodeWithText(title).performClick()
             waitForText(title)
             shot(file)
-            Espresso.pressBack()
+            back()
             waitForText("Merge PDFs")
         }
 
@@ -97,7 +110,7 @@ class UiFlowTest {
         rule.onNodeWithText("Change").performClick()
         waitForText("PDF settings")
         shot("09_pdf_settings")
-        Espresso.pressBack()
+        back()
         rule.waitForIdle()
 
         rule.onAllNodes(hasContentDescription("Rename")).onFirst().performClick()
@@ -114,7 +127,7 @@ class UiFlowTest {
         rule.onNodeWithText("Arrange").performClick()
         waitForText("Arrange pages")
         shot("13_arrange")
-        Espresso.pressBack()
+        back()
         rule.waitForIdle()
 
         rule.onNodeWithText("Crop").performClick()
@@ -123,9 +136,9 @@ class UiFlowTest {
         shot("14_crop")
         rule.onNodeWithContentDescription("Cancel").performClick()
         waitForText("Magic")
-        Espresso.pressBack() // back to document
+        back() // back to document
         waitForText("Share PDF")
-        Espresso.pressBack() // back to home
+        back() // back to home
         waitForText("Scan a document")
 
         // Camera

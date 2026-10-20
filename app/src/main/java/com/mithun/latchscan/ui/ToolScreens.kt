@@ -306,7 +306,12 @@ fun MergeScreen(anyDocument: Boolean, onBack: () -> Unit) {
         progress = if (progress > 0f) progress else null,
         action = {
             PrimaryButton(
-                text = if (anyDocument) "Merge into ${format.label}" else "Merge ${files.size} PDFs",
+                text = when {
+                    anyDocument && files.size == 1 -> "Convert to ${format.label}"
+                    anyDocument -> "Merge into ${format.label}"
+                    files.size >= 2 -> "Merge ${files.size} PDFs"
+                    else -> "Merge PDFs"
+                },
                 enabled = canRun,
                 modifier = Modifier.fillMaxWidth(),
                 onClick = {

@@ -208,8 +208,16 @@ object ImageProcessor {
     }
 
     /** Full pipeline for one page: original -> crop/warp -> filter -> rotate -> JPEG. */
-    fun render(original: File, page: Page, out: File, quality: Int = 90): Boolean {
-        val src = decodeSampled(original) ?: return false
+    fun render(original: File, page: Page, out: File, quality: Int = 90): Boolean = try {
+        renderAt(original, page, out, quality, MAX_DIM)
+    } catch (e: OutOfMemoryError) {
+        // Low-memory phones: retry at a smaller (still ~200 dpi) size.
+        System.gc()
+        renderAt(original, page, out, quality, 1800)
+    }
+
+    private fun renderAt(original: File, page: Page, out: File, quality: Int, maxDim: Int): Boolean {
+        val src = decodeSampled(original, maxDim) ?: return false
         val warped = warp(src, page.quad)
         src.recycle()
         val filtered = applyFilter(warped, page.filter)

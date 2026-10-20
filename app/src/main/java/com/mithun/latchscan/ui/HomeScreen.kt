@@ -33,6 +33,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.windowInsetsBottomHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
@@ -159,6 +160,22 @@ fun HomeScreen(
             }
         }
 
+        // Fade the list out under the floating scan bar.
+        Box(
+            Modifier
+                .align(Alignment.BottomCenter)
+                .fillMaxWidth()
+                .navigationBarsPadding()
+                .height(96.dp)
+                .background(androidx.compose.ui.graphics.Brush.verticalGradient(listOf(Color.Transparent, Latch.colors.background))),
+        )
+        Box(
+            Modifier
+                .align(Alignment.BottomCenter)
+                .fillMaxWidth()
+                .windowInsetsBottomHeight(androidx.compose.foundation.layout.WindowInsets.navigationBars)
+                .background(Latch.colors.background),
+        )
         // Scan bar
         Row(
             Modifier

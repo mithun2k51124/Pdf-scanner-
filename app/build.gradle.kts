@@ -87,7 +87,7 @@ dependencies {
     implementation("androidx.camera:camera-lifecycle:$camerax")
     implementation("androidx.camera:camera-view:$camerax")
 
-    implementation("org.opencv:opencv:4.10.0")
+    implementation("org.opencv:opencv:4.12.0")
     implementation("com.tom-roush:pdfbox-android:2.0.27.0")
     implementation("io.coil-kt:coil-compose:2.7.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")

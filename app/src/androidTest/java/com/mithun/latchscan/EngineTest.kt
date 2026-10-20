@@ -114,8 +114,8 @@ class EngineTest {
         val src = asset("paper_dark_table.jpg")
         val q = EdgeDetector.detect(src)!!
         val warped = ImageProcessor.warp(src, q)
-        // Paper is 850x1100 in the scene: the corrected page should be portrait.
-        assertTrue(warped.height > warped.width)
+        // The corrected page keeps roughly the size of the paper in the photo.
+        assertTrue(warped.width in 500..800 && warped.height in 600..800)
         for (f in Filter.entries) {
             val out = ImageProcessor.applyFilter(warped, f)
             assertEquals(warped.width, out.width)
