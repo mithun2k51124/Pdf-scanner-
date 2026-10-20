@@ -6,19 +6,13 @@ import com.mithun.latchscan.tools.DocxReader
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import java.awt.image.BufferedImage
-import java.io.ByteArrayOutputStream
 import java.io.File
 import java.util.zip.ZipFile
-import javax.imageio.ImageIO
 
 class DocxTest {
 
-    private fun jpeg(w: Int, h: Int): ByteArray {
-        val bo = ByteArrayOutputStream()
-        ImageIO.write(BufferedImage(w, h, BufferedImage.TYPE_INT_RGB), "jpeg", bo)
-        return bo.toByteArray()
-    }
+    // The writer/reader treat image bytes as opaque; sizes come from the callback.
+    private fun jpeg(w: Int, h: Int): ByteArray = byteArrayOf(0xFF.toByte(), 0xD8.toByte()) + "${w}x$h".toByteArray()
 
     @Test
     fun writesAndReadsBackTextImagesAndBreaks() {
@@ -36,7 +30,10 @@ class DocxTest {
                 .forEach { assertTrue("missing $it", zip.getEntry(it) != null) }
         }
 
-        val blocks = DocxReader.read(out.inputStream()) { b -> ImageIO.read(b.inputStream())?.let { it.width to it.height } }
+        val blocks = DocxReader.read(out.inputStream()) { b ->
+            val (w, h) = String(b, 2, b.size - 2).split('x').map { it.toInt() }
+            w to h
+        }
         assertEquals(DocBlock.Heading("Title <&>", 1), blocks[0])
         assertEquals(DocBlock.Paragraph("One\nTwo\tTab"), blocks[1])
         val img = blocks[2] as DocBlock.Image

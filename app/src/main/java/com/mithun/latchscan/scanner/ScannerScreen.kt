@@ -454,9 +454,9 @@ private fun CameraContent(
                 val page = session.addCapture(bmp, quad)
                 bmp.recycle()
                 toast = when (page.side) {
-                    Side.FRONT -> "Front captured — now flip it over"
+                    Side.FRONT -> "Front captured. Now flip it over"
                     Side.BACK -> "Back captured"
-                    Side.NONE -> "Page ${session.pages.size} captured — place the next page"
+                    Side.NONE -> "Page ${session.pages.size} captured. Place the next page"
                 }
             }
         } catch (t: Throwable) {

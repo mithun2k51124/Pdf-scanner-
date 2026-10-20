@@ -14,9 +14,12 @@ android {
         targetSdk = 35
         versionCode = (System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull() ?: 1)
         versionName = "1.0." + (System.getenv("GITHUB_RUN_NUMBER") ?: "0")
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         ndk {
             // Real phones only — keeps the APK small (OpenCV ships big native libs).
+            // CI emulator runs add x86_64.
             abiFilters += listOf("arm64-v8a", "armeabi-v7a")
+            if (System.getenv("LATCH_EMULATOR_ABI") == "true") abiFilters += "x86_64"
         }
     }
 
@@ -26,9 +29,10 @@ android {
             // every build can be installed over the previous one.
             val ksPath = System.getenv("LATCH_KEYSTORE_PATH")
             storeFile = if (ksPath != null) file(ksPath) else file("latch-ci.jks")
-            storePassword = System.getenv("LATCH_KEYSTORE_PASSWORD") ?: "latchscan"
-            keyAlias = System.getenv("LATCH_KEY_ALIAS") ?: "latch"
-            keyPassword = System.getenv("LATCH_KEY_PASSWORD") ?: "latchscan"
+            fun env(name: String, fallback: String) = System.getenv(name)?.takeIf { it.isNotBlank() && ksPath != null } ?: fallback
+            storePassword = env("LATCH_KEYSTORE_PASSWORD", "latchscan")
+            keyAlias = env("LATCH_KEY_ALIAS", "latch")
+            keyPassword = env("LATCH_KEY_PASSWORD", "latchscan")
         }
     }
 
@@ -89,4 +93,12 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
 
     testImplementation("junit:junit:4.13.2")
+
+    androidTestImplementation(composeBom)
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+    androidTestImplementation("androidx.test:runner:1.6.2")
+    androidTestImplementation("androidx.test:rules:1.6.1")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
