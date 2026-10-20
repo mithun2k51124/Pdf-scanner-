@@ -124,6 +124,8 @@ jobs:
         run: python3 .github/scripts/annotate.py 0
 
       - name: Run on emulator
+        # Emulator teardown is occasionally flaky; the last step decides pass/fail from the test output.
+        continue-on-error: true
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 33

@@ -44,7 +44,8 @@ class UiFlowTest {
         rule.waitForIdle()
         Thread.sleep(700) // let animations settle
         val bmp: Bitmap? = InstrumentationRegistry.getInstrumentation().uiAutomation.takeScreenshot()
-        bmp?.let { b -> File(screensDir, "$name.png").outputStream().use { b.compress(Bitmap.CompressFormat.PNG, 100, it) } }
+        val prefix = InstrumentationRegistry.getArguments().getString("shotPrefix") ?: ""
+        bmp?.let { b -> File(screensDir, "$prefix$name.png").outputStream().use { b.compress(Bitmap.CompressFormat.PNG, 100, it) } }
     }
 
     private fun back() {
