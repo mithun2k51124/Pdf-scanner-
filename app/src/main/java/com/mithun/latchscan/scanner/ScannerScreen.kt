@@ -409,11 +409,7 @@ private fun CameraContent(
 
     val detection by analyzer.detections.collectAsState()
     var capturing by remember { mutableStateOf(false) }
-    var stableSince by remember { mutableStateOf<Long?>(null) }
-    var reference by remember { mutableStateOf<Quad?>(null) }
-    var lostFrames by remember { mutableIntStateOf(0) }
-    var armed by remember { mutableStateOf(true) }
-    var lastCaptured by remember { mutableStateOf<Quad?>(null) }
+    val tracker = remember { LatchTracker(holdMs = HOLD_MS, tolerance = STABLE_TOLERANCE) }
     var holdProgress by remember { mutableFloatStateOf(0f) }
     val flash = remember { Animatable(0f) }
     var toast by remember { mutableStateOf<String?>(null) }
@@ -438,9 +434,7 @@ private fun CameraContent(
             val bmp = withContext(Dispatchers.Default) { proxy.toUprightBitmap() }
             val found = withContext(Dispatchers.Default) { EdgeDetector.detect(bmp) }
             val quad = found ?: previewQuad
-            lastCaptured = quad ?: previewQuad
-            armed = false
-            stableSince = null
+            tracker.onCaptured(previewQuad ?: quad)
             holdProgress = 0f
             if (!session.autoCapture && !fromAuto) {
                 // No outline found: keep the photo's real colours until the user crops it.
@@ -467,7 +461,7 @@ private fun CameraContent(
             }
         } catch (t: Throwable) {
             toast = "Couldn't take the photo. Try again."
-            armed = true
+            tracker.onCaptureFailed()
         } finally {
             capturing = false
         }
@@ -477,33 +471,10 @@ private fun CameraContent(
     val autoState by rememberUpdatedState(auto)
     LaunchedEffect(detection) {
         val d = detection ?: return@LaunchedEffect
-        val q = d.quad
-        if (q == null) {
-            lostFrames++
-            if (lostFrames > 5) {
-                reference = null
-                stableSince = null
-                holdProgress = 0f
-                armed = true // page removed -> ready for the next one
-            }
-            return@LaunchedEffect
-        }
-        lostFrames = 0
-        if (!armed) {
-            val last = lastCaptured
-            if (last == null || q.maxShift(last) > 0.12f) armed = true else return@LaunchedEffect
-        }
-        val ref = reference
-        if (ref == null || q.maxShift(ref) > STABLE_TOLERANCE) {
-            reference = q
-            stableSince = d.timeMs
-            holdProgress = 0f
-        } else {
-            val since = stableSince ?: d.timeMs
-            holdProgress = ((d.timeMs - since).toFloat() / HOLD_MS).coerceIn(0f, 1f)
-            if (autoState && holdProgress >= 1f && !capturing && imageCapture != null) {
-                scope.launch { doCapture(fromAuto = true) }
-            }
+        val state = tracker.update(d.quad, d.timeMs, autoState)
+        holdProgress = state.progress
+        if (state.capture && !capturing && imageCapture != null) {
+            scope.launch { doCapture(fromAuto = true) }
         }
     }
     LaunchedEffect(toast) {
@@ -519,7 +490,7 @@ private fun CameraContent(
             onAutoChange = {
                 session.autoCapture = it
                 holdProgress = 0f
-                stableSince = null
+                tracker.resetHold()
             },
             torchOn = torchOn,
             torchAvailable = camera?.cameraInfo?.hasFlashUnit() == true,

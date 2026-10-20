@@ -154,4 +154,6 @@ jobs:
 
       - name: Fail if instrumented tests failed
         run: |
-          grep -q "^OK (" out/instrument.txt || { echo "::error::Instrumented tests failed"; grep -E "FAILURES|Error|Exception|at com.mithun" out/instrument.txt | head -n 40; exit 1; }
+          f="$RUNNER_TEMP/out/instrument.txt"
+          grep -q "^OK (" "$f" || { echo "::error::Instrumented tests failed"; grep -E "FAILURES|Error|Exception|at com.mithun" "$f" | head -n 40; exit 1; }
+          grep "^OK (" "$f"
