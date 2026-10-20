@@ -63,6 +63,7 @@ import com.mithun.latchscan.data.Quad
 import com.mithun.latchscan.data.clamp01
 import com.mithun.latchscan.ui.theme.Brand
 import com.mithun.latchscan.ui.pressable
+import com.mithun.latchscan.ui.DarkScreenSystemBars
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -96,6 +97,7 @@ fun CropEditor(
     var touch by remember { mutableStateOf(Offset.Zero) }
 
     BackHandler(onBack = onCancel)
+    DarkScreenSystemBars()
 
     LaunchedEffect(original) {
         val b = withContext(Dispatchers.IO) { ImageProcessor.decodeSampled(original, 1800) }

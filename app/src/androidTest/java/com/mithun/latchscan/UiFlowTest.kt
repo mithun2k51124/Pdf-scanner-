@@ -25,7 +25,7 @@ import java.io.File
 
 /**
  * Walks through every screen like a user would and saves a screenshot of each
- * (files/screens/*.png) so the UI can be reviewed from CI.
+ * (saved as PNGs in files/screens) so the UI can be reviewed from CI.
  */
 @OptIn(ExperimentalTestApi::class)
 @RunWith(AndroidJUnit4::class)

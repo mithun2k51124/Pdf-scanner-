@@ -128,6 +128,7 @@ import com.mithun.latchscan.data.Pt
 import com.mithun.latchscan.data.Quad
 import com.mithun.latchscan.data.Side
 import com.mithun.latchscan.ui.Chip
+import com.mithun.latchscan.ui.DarkScreenSystemBars
 import com.mithun.latchscan.ui.PrimaryButton
 import com.mithun.latchscan.ui.pressable
 import com.mithun.latchscan.ui.theme.Brand
@@ -181,6 +182,7 @@ fun ScannerScreen(
         if (session.pages.isNotEmpty()) confirmDiscard = true else { session.clear(); onClose() }
     }
     BackHandler { tryClose() }
+    DarkScreenSystemBars(keepScreenOn = true)
 
     Box(
         Modifier

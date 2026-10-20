@@ -89,9 +89,24 @@ class EngineTest {
     }
 
     @Test
+    fun detectsPaperOnWoodWithPenAndShadow() {
+        fun pts(vararg v: Int) = v.toList().chunked(2).map { (x, y) -> Pt(x / 1280f, y / 960f) }
+        val cases = mapOf(
+            "paper_wood_pen.jpg" to pts(400, 140, 900, 190, 960, 880, 320, 830),
+            "paper_wood_tilted_shadow.jpg" to pts(300, 220, 930, 110, 1050, 760, 380, 900),
+        )
+        for ((name, truth) in cases) {
+            val q = EdgeDetector.detect(asset(name))
+            assertNotNull("no page found in $name", q)
+            q!!.points.zip(truth).forEach { (a, e) -> assertNear(e, a) }
+        }
+    }
+
+    @Test
     fun findsNothingInAnEmptyScene() {
         val bmp = Bitmap.createBitmap(800, 600, Bitmap.Config.ARGB_8888).apply { eraseColor(Color.DKGRAY) }
         assertEquals(null, EdgeDetector.detect(bmp))
+        assertEquals(null, EdgeDetector.detect(asset("wood_no_paper.jpg")))
     }
 
     @Test

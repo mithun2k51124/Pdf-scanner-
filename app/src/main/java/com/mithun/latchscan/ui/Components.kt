@@ -243,3 +243,26 @@ fun formatBytes(bytes: Long): String = when {
     bytes >= 1024L -> String.format(java.util.Locale.US, "%.0f KB", bytes / 1024.0)
     else -> "$bytes B"
 }
+
+/** Light status/navigation bar icons while a dark screen (camera, crop) is showing. */
+@Composable
+fun DarkScreenSystemBars(keepScreenOn: Boolean = false) {
+    val view = androidx.compose.ui.platform.LocalView.current
+    androidx.compose.runtime.DisposableEffect(view) {
+        var ctx = view.context
+        while (ctx is android.content.ContextWrapper && ctx !is android.app.Activity) ctx = ctx.baseContext
+        val window = (ctx as? android.app.Activity)?.window
+        val controller = window?.let { androidx.core.view.WindowCompat.getInsetsController(it, view) }
+        val prevStatus = controller?.isAppearanceLightStatusBars
+        val prevNav = controller?.isAppearanceLightNavigationBars
+        controller?.isAppearanceLightStatusBars = false
+        controller?.isAppearanceLightNavigationBars = false
+        val prevKeep = view.keepScreenOn
+        if (keepScreenOn) view.keepScreenOn = true
+        onDispose {
+            if (prevStatus != null) controller?.isAppearanceLightStatusBars = prevStatus
+            if (prevNav != null) controller?.isAppearanceLightNavigationBars = prevNav
+            view.keepScreenOn = prevKeep
+        }
+    }
+}
