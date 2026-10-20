@@ -79,7 +79,11 @@ object EdgeDetector {
                 .filter { it.support >= MIN_SUPPORT }
                 .maxByOrNull { it.area * it.support }
                 ?: return null
-            return Quad.ordered(best.pts.map { Pt((it.x / w).toFloat(), (it.y / h).toFloat()) })
+            // Pull the corners in very slightly so no sliver of table shows along the page edge.
+            val cx = best.pts.sumOf { it.x } / 4
+            val cy = best.pts.sumOf { it.y } / 4
+            val k = 0.992
+            return Quad.ordered(best.pts.map { Pt(((cx + (it.x - cx) * k) / w).toFloat(), ((cy + (it.y - cy) * k) / h).toFloat()) })
         } finally {
             small.release(); blurred.release(); kernel3.release(); kernel9.release(); supportMat.release()
             maps.forEach { it.release() }
