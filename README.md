@@ -6,6 +6,15 @@ Everything runs on the phone. The app has no internet permission.
 
 <p align="center"><img src="docs/icon.png" width="120" alt="Latch Scan icon"></p>
 
+<p align="center">
+<img src="docs/screenshots/home.jpg" width="160" alt="Scans">
+<img src="docs/screenshots/crop.jpg" width="160" alt="Adjust corners">
+<img src="docs/screenshots/edit.jpg" width="160" alt="Filters and page tools">
+<img src="docs/screenshots/document.jpg" width="160" alt="Export">
+<img src="docs/screenshots/tools.jpg" width="160" alt="Tools">
+<img src="docs/screenshots/document_dark.jpg" width="160" alt="Dark mode">
+</p>
+
 ## Download
 
 Get **LatchScan.apk** from the [latest release](../../releases/latest) and open it on your phone. Android will ask you to allow installs from your browser or file manager the first time.
@@ -52,6 +61,16 @@ Stack: Kotlin, Jetpack Compose (Material 3), CameraX, OpenCV 4, PdfBox-Android, 
 2. `EdgeDetector` shrinks each frame to 480 px and blurs it. It then builds three edge maps (two Canny sensitivities and an Otsu threshold) and keeps the largest convex four-corner shape that covers at least 12% of the frame and doesn't hug the frame border.
 3. The screen springs the outline toward each new detection. Once every corner stays within ~2% for 1.1 s, the app takes a full-resolution photo, re-detects the corners on it, and perspective-warps the page.
 4. Auto mode won't fire again until the page is removed or moved, so you won't get duplicates.
+
+## Testing
+
+Every push runs three layers of checks on GitHub Actions:
+
+- **Unit tests** (JVM): auto-capture timing (`LatchTrackerTest`), corner geometry, and the Word reader/writer.
+- **Device tests** on an Android 13 emulator (Pixel 6): page detection on test photos (dark and light tables, wood grain, a pen across the page, a shadow, and an empty table), filters, PDF build/merge/compress-to-size, image compress-to-size, mixed-document merge to PDF and Word, and saving/exporting a scan.
+- **A full UI walk-through** in light and dark mode: home, every tool, document, PDF settings, rename, page editor, arrange, crop, live camera (auto, manual, front & back), manual capture, review and save. Screenshots of every screen are pushed to the `ci-artifacts` branch.
+
+The build also checks that every native library supports 16 KB memory pages, which Google Play requires for apps targeting Android 15+.
 
 ## Publishing to Google Play
 

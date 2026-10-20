@@ -43,7 +43,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.CameraAlt
-import androidx.compose.material.icons.rounded.Compress
+import androidx.compose.material.icons.rounded.Lock
 import androidx.compose.material.icons.rounded.Description
 import androidx.compose.material.icons.rounded.Image
 import androidx.compose.material.icons.rounded.Layers
@@ -490,7 +490,7 @@ private fun ToolsList(onTool: (String) -> Unit, onImport: () -> Unit) {
                     .fillMaxWidth()
                     .padding(top = 8.dp, start = 4.dp, end = 4.dp),
             ) {
-                Icon(Icons.Rounded.Compress, null, tint = Latch.colors.textMuted, modifier = Modifier.size(18.dp))
+                Icon(Icons.Rounded.Lock, null, tint = Latch.colors.textMuted, modifier = Modifier.size(18.dp))
                 Spacer(Modifier.width(8.dp))
                 Text(
                     "Everything runs on your phone. Files are never uploaded.",
