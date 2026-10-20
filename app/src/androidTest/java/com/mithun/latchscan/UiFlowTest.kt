@@ -52,6 +52,12 @@ class UiFlowTest {
         rule.waitForIdle()
     }
 
+    private fun keyBack() {
+        InstrumentationRegistry.getInstrumentation().sendKeyDownUpSync(android.view.KeyEvent.KEYCODE_BACK)
+        rule.waitForIdle()
+        Thread.sleep(500)
+    }
+
     private fun waitForText(text: String, timeout: Long = 10_000) {
         rule.waitUntil(timeout) { rule.onAllNodes(hasText(text, substring = true)).fetchSemanticsNodes().isNotEmpty() }
     }
@@ -115,7 +121,7 @@ class UiFlowTest {
         rule.onNodeWithText("Change").performClick()
         waitForText("PDF settings")
         shot("09_pdf_settings")
-        back()
+        rule.onNodeWithText("Done").performClick()
         rule.waitForIdle()
 
         rule.onAllNodes(hasContentDescription("Rename")).onFirst().performClick()
@@ -132,7 +138,7 @@ class UiFlowTest {
         rule.onNodeWithText("Arrange").performClick()
         waitForText("Arrange pages")
         shot("13_arrange")
-        back()
+        keyBack() // a real key press goes to the sheet's own window and closes it
         rule.waitForIdle()
 
         rule.onNodeWithText("Crop").performClick()
