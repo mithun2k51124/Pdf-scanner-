@@ -134,15 +134,19 @@ fun DocumentScreen(
                 modifier = Modifier.weight(1f),
             ) {
                 itemsIndexed(doc.pages, key = { _, p -> p.id }) { i, p ->
-                    Column(Modifier.animateItem(), horizontalAlignment = Alignment.CenterHorizontally) {
+                    Column(
+                        Modifier
+                            .animateItem()
+                            .pressable { onOpenPage(i) },
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                    ) {
                         Box(
                             Modifier
                                 .fillMaxWidth()
                                 .aspectRatio(0.72f)
                                 .shadow(4.dp, RoundedCornerShape(8.dp))
                                 .clip(RoundedCornerShape(8.dp))
-                                .background(Color.White)
-                                .pressable { onOpenPage(i) },
+                                .background(Color.White),
                         ) {
                             PageImage(File(app.repository.dirOf(doc.id), p.processed), pageKey(p), Modifier.fillMaxSize(), ContentScale.Fit)
                         }
