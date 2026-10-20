@@ -171,8 +171,10 @@ fun ScannerScreen(
             importing = true
             scope.launch {
                 val n = session.importImages(uris)
-                importing = false
-                if (n == 0) Toast.makeText(context, "Couldn't open those images", Toast.LENGTH_SHORT).show() else onReview()
+                withContext(Dispatchers.Main) {
+                    importing = false
+                    if (n == 0) Toast.makeText(context, "Couldn't open those images", Toast.LENGTH_SHORT).show() else onReview()
+                }
             }
         }
     }
@@ -444,7 +446,7 @@ private fun CameraContent(
                 // No outline found: keep the photo's real colours until the user crops it.
                 val page = session.addCapture(bmp, quad ?: Quad.inset(0.04f), if (quad != null) Filter.ENHANCED else Filter.ORIGINAL)
                 bmp.recycle()
-                onCrop(page.id)
+                withContext(Dispatchers.Main) { onCrop(page.id) }
             } else {
                 val thumb = withContext(Dispatchers.Default) {
                     Bitmap.createScaledBitmap(bmp, 360, (360f * bmp.height / bmp.width).toInt().coerceAtLeast(1), true)

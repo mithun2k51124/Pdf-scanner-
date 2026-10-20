@@ -124,8 +124,10 @@ fun HomeScreen(
             app.session.start()
             scope.launch {
                 val n = app.session.importImages(uris)
-                importing = false
-                if (n > 0) onImported() else Toast.makeText(context, "Couldn't open those images", Toast.LENGTH_SHORT).show()
+                kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
+                    importing = false
+                    if (n > 0) onImported() else Toast.makeText(context, "Couldn't open those images", Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
