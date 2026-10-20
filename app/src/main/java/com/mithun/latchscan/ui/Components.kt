@@ -210,7 +210,7 @@ fun BusyOverlay(visible: Boolean, message: String, progress: Float? = null) {
 
 /** A selectable pill used for filters, sizes and formats. */
 @Composable
-fun Chip(text: String, selected: Boolean, onClick: () -> Unit, modifier: Modifier = Modifier, dark: Boolean = false) {
+fun Chip(text: String, selected: Boolean, onClick: () -> Unit, modifier: Modifier = Modifier, dark: Boolean = false, compact: Boolean = false) {
     val bg by androidx.compose.animation.animateColorAsState(
         when {
             selected -> Brand.Highlighter
@@ -231,7 +231,7 @@ fun Chip(text: String, selected: Boolean, onClick: () -> Unit, modifier: Modifie
             .background(bg)
             .then(if (!selected && !dark) Modifier.border(1.dp, Latch.colors.outline, RoundedCornerShape(19.dp)) else Modifier)
             .pressable(role = Role.RadioButton, onClick = onClick)
-            .padding(horizontal = 16.dp),
+            .padding(horizontal = if (compact) 8.dp else 16.dp),
         contentAlignment = Alignment.Center,
     ) {
         Text(text, style = MaterialTheme.typography.labelMedium, color = fg, maxLines = 1)

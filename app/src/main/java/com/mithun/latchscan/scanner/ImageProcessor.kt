@@ -150,10 +150,12 @@ object ImageProcessor {
                 Filter.GRAY -> {
                     val g = Mat()
                     Imgproc.cvtColor(rgba, g, Imgproc.COLOR_RGBA2GRAY)
-                    val clahe = Imgproc.createCLAHE(2.0, Size(8.0, 8.0))
-                    clahe.apply(g, g)
-                    Imgproc.cvtColor(g, out, Imgproc.COLOR_GRAY2RGBA)
-                    g.release()
+                    // Even out shadows first, then a gentle contrast lift: clean grey pages.
+                    val flat = Mat()
+                    flattenLighting(g, flat)
+                    flat.convertTo(flat, CvType.CV_8UC1, 1.12, -14.0)
+                    Imgproc.cvtColor(flat, out, Imgproc.COLOR_GRAY2RGBA)
+                    g.release(); flat.release()
                 }
                 Filter.BW -> {
                     val g = Mat()

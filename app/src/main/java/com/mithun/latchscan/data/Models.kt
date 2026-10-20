@@ -87,7 +87,7 @@ data class Quad(val tl: Pt, val tr: Pt, val br: Pt, val bl: Pt) {
 enum class Filter(val label: String) {
     ORIGINAL("Original"),
     ENHANCED("Magic"),
-    GRAY("Grayscale"),
+    GRAY("Gray"),
     BW("B&W"),
 }
 

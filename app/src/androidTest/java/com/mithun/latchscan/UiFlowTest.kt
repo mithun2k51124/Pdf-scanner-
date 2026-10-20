@@ -58,6 +58,23 @@ class UiFlowTest {
         Thread.sleep(500)
     }
 
+    /**
+     * The live camera keeps the UI busy (new detections every frame), so drive the
+     * test clock by hand while waiting for the next screen's transition to finish.
+     */
+    private fun waitAdvancing(text: String, timeout: Long = 10_000) {
+        val end = System.currentTimeMillis() + timeout
+        while (System.currentTimeMillis() < end) {
+            rule.mainClock.advanceTimeBy(100)
+            if (rule.onAllNodes(hasText(text, substring = true)).fetchSemanticsNodes().isNotEmpty()) {
+                rule.mainClock.advanceTimeBy(600)
+                return
+            }
+            Thread.sleep(100)
+        }
+        throw AssertionError("Timed out waiting for \"$text\"")
+    }
+
     private fun waitForText(text: String, timeout: Long = 10_000) {
         rule.waitUntil(timeout) { rule.onAllNodes(hasText(text, substring = true)).fetchSemanticsNodes().isNotEmpty() }
     }
@@ -132,7 +149,7 @@ class UiFlowTest {
         rule.onNodeWithText("1").performClick()
         waitForText("Magic")
         shot("11_page_editor")
-        rule.onNodeWithText("Grayscale").performClick()
+        rule.onNodeWithText("Gray").performClick()
         Thread.sleep(2500)
         shot("12_page_editor_gray")
         rule.onNodeWithText("Arrange").performClick()
@@ -165,15 +182,15 @@ class UiFlowTest {
         shot("17_camera_front_back")
         rule.onNodeWithContentDescription("Take photo").performClick()
         // Manual capture opens the crop editor.
-        rule.waitUntil(15_000) { rule.onAllNodes(hasText("Adjust corners")).fetchSemanticsNodes().isNotEmpty() }
+        waitAdvancing("Adjust corners", 20_000)
         Thread.sleep(1200)
         shot("18_crop_after_capture")
         rule.onNodeWithText("Done").performClick()
-        waitForText("Manual")
+        waitAdvancing("Manual")
         Thread.sleep(1500)
         shot("19_camera_with_page")
         rule.onNodeWithContentDescription("Review 1 pages").performClick()
-        waitForText("Review scan")
+        waitAdvancing("Review scan")
         Thread.sleep(1500)
         shot("20_review")
         rule.onNodeWithText("Save 1 page(s)").performClick()

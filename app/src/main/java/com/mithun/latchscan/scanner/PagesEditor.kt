@@ -196,7 +196,7 @@ fun PagesEditor(
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
                     Filter.entries.forEach { f ->
-                        Chip(f.label, current.filter == f, { if (current.filter != f) edit(current) { it.copy(filter = f) } }, Modifier.weight(1f))
+                        Chip(f.label, current.filter == f, { if (current.filter != f) edit(current) { it.copy(filter = f) } }, Modifier.weight(1f), compact = true)
                     }
                 }
                 if (pages.size > 1) {
