@@ -88,9 +88,14 @@ class UiFlowTest {
         rule.onNodeWithText("Tools").performClick()
         shot("02_tools")
 
-        val tools = listOf("Merge PDFs" to "03_merge_pdfs", "Merge any documents" to "04_merge_docs", "Compress PDF" to "05_compress_pdf", "Compress image" to "06_compress_image")
-        for ((title, file) in tools) {
-            rule.onNodeWithText(title).performClick()
+        val tools = listOf(
+            Triple("Merge PDFs", "Add files to begin", "03_merge_pdfs"),
+            Triple("Merge any documents", "Merge documents", "04_merge_docs"),
+            Triple("Compress PDF", "Shrink a PDF to the size you need", "05_compress_pdf"),
+            Triple("Compress image", "Fit photos under an upload limit", "06_compress_image"),
+        )
+        for ((label, title, file) in tools) {
+            rule.onNodeWithText(label).performClick()
             waitForText(title)
             shot(file)
             back()
