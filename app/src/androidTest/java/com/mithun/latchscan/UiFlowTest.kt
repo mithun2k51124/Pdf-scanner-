@@ -193,7 +193,7 @@ class UiFlowTest {
         waitAdvancing("Review scan")
         Thread.sleep(1500)
         shot("20_review")
-        rule.onNodeWithText("Save 1 page(s)").performClick()
+        rule.onNodeWithText("Save 1 page").performClick()
         waitForText("Share PDF", 20_000)
         shot("21_saved_document")
     }

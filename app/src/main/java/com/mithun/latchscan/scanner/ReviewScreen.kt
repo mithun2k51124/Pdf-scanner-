@@ -43,10 +43,14 @@ import com.mithun.latchscan.ui.PrimaryButton
 import com.mithun.latchscan.ui.RoundIconButton
 import com.mithun.latchscan.ui.theme.Brand
 import com.mithun.latchscan.ui.theme.Latch
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+
+fun pagesLabel(n: Int) = if (n == 1) "1 page" else "$n pages"
 
 fun defaultScanName(): String = "Scan " + SimpleDateFormat("d MMM yyyy, HH.mm", Locale.getDefault()).format(Date())
 
@@ -70,19 +74,23 @@ fun ReviewScreen(
         if (saving || session.pages.isEmpty()) return
         saving = true
         scope.launch {
-            try {
+            val result = runCatching {
                 val pages = session.finalPages()
-                val doc = if (target != null) {
+                if (target != null) {
                     app.repository.appendPages(target.id, pages, session.dir)
                 } else {
                     app.repository.saveNew(name.trim().ifEmpty { defaultScanName() }, pages, session.dir)
                 }
-                session.clear()
-                if (doc != null) onSaved(doc.id)
-            } catch (t: Throwable) {
-                Toast.makeText(context, "Couldn't save: ${t.message}", Toast.LENGTH_LONG).show()
-            } finally {
+            }
+            // UI work always back on the main thread.
+            withContext(Dispatchers.Main) {
                 saving = false
+                result.onSuccess { doc ->
+                    session.clear()
+                    if (doc != null) onSaved(doc.id)
+                }.onFailure {
+                    Toast.makeText(context, "Couldn't save: ${it.message}", Toast.LENGTH_LONG).show()
+                }
             }
         }
     }
@@ -136,7 +144,7 @@ fun ReviewScreen(
                 }
                 Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                     PrimaryButton(
-                        text = if (target != null) "Add ${session.pages.size} page(s)" else "Save ${session.pages.size} page(s)",
+                        text = (if (target != null) "Add " else "Save ") + pagesLabel(session.pages.size),
                         onClick = { save() },
                         icon = Icons.Rounded.Check,
                         enabled = session.pages.isNotEmpty() && session.busy == 0,

@@ -124,6 +124,7 @@ import androidx.lifecycle.compose.LocalLifecycleOwner
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.mithun.latchscan.LatchApp
+import com.mithun.latchscan.data.Filter
 import com.mithun.latchscan.data.Pt
 import com.mithun.latchscan.data.Quad
 import com.mithun.latchscan.data.Side
@@ -440,7 +441,8 @@ private fun CameraContent(
             stableSince = null
             holdProgress = 0f
             if (!session.autoCapture && !fromAuto) {
-                val page = session.addCapture(bmp, quad ?: Quad.inset(0.04f))
+                // No outline found: keep the photo's real colours until the user crops it.
+                val page = session.addCapture(bmp, quad ?: Quad.inset(0.04f), if (quad != null) Filter.ENHANCED else Filter.ORIGINAL)
                 bmp.recycle()
                 onCrop(page.id)
             } else {
