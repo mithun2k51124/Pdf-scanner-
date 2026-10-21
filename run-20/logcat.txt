@@ -1,0 +1,643 @@
+10-21 11:23:51.013 D/ImsResolver(  974): maybeAddedImsService, packageName: com.mithun.latchscan.test
+10-21 11:23:51.522 D/MediaPlayerList(  947): Name of package changed: com.mithun.latchscan.test
+10-21 11:23:51.534 D/MediaPlayerList(  947): Name of package changed: com.mithun.latchscan.test
+10-21 11:23:51.541 W/BackupTransportManager(  478): Package com.mithun.latchscan.test enabled setting: 0
+10-21 11:23:51.556 D/AndroidRuntime( 3703): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-21 11:23:51.583 I/AndroidRuntime( 3703): Using default boot image
+10-21 11:23:51.583 I/AndroidRuntime( 3703): Leaving lock profiling enabled
+10-21 11:23:51.765 D/CarrierSvcBindHelper(  974): onPackageModified: com.mithun.latchscan.test
+10-21 11:23:51.844 D/ImsResolver(  974): maybeAddedImsService, packageName: com.mithun.latchscan.test
+10-21 11:23:51.990 D/AndroidRuntime( 3703): Calling main entry com.android.commands.am.Am
+10-21 11:23:52.109 I/ActivityManager(  478): Force stopping com.mithun.latchscan appid=10174 user=0: start instr
+10-21 11:23:52.291 I/ActivityManager(  478): Start proc 3740:com.mithun.latchscan/u0a174 for added application com.mithun.latchscan
+10-21 11:23:52.305 I/ithun.latchscan( 3740): Late-enabling -Xcheck:jni
+10-21 11:23:52.479 I/ithun.latchscan( 3740): Using CollectorTypeCC GC.
+10-21 11:23:52.480 W/ithun.latchscan( 3740): Unexpected CPU variant for x86: x86_64.
+10-21 11:23:52.480 W/ithun.latchscan( 3740): Known variants: atom, sandybridge, silvermont, kabylake, default
+10-21 11:23:52.559 W/ActivityThread( 3740): Package uses different ABI(s) than its instrumentation: package[com.mithun.latchscan]: x86_64, null instrumentation[com.mithun.latchscan.test]: null, null
+10-21 11:23:52.607 W/ithun.latchscan( 3740): ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*2649186567])
+10-21 11:23:52.610 W/ithun.latchscan( 3740): ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*2649186567:/system/framework/android.test.mock.jar*4109917914])
+10-21 11:23:52.610 W/ziparchive( 3740): Unable to open '/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.dm': No such file or directory
+10-21 11:23:52.610 W/ziparchive( 3740): Unable to open '/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.dm': No such file or directory
+10-21 11:23:52.629 W/ziparchive( 3740): Unable to open '/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.dm': No such file or directory
+10-21 11:23:52.629 W/ziparchive( 3740): Unable to open '/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.dm': No such file or directory
+10-21 11:23:53.056 I/Nearby  ( 1049): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:23:53.157 I/Nearby  ( 1049): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:23:53.160 I/Nearby  ( 1049): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:23:53.713 D/nativeloader( 3740): Configuring classloader-namespace for other apk /system/framework/android.test.runner.jar:/system/framework/android.test.mock.jar:/system/framework/android.test.base.jar:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/lib/x86_64:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/lib/x86_64:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!/lib/x86_64:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.mithun.latchscan
+10-21 11:23:53.725 V/GraphicsEnvironment( 3740): ANGLE Developer option for 'com.mithun.latchscan' set to: 'default'
+10-21 11:23:53.728 V/GraphicsEnvironment( 3740): ANGLE GameManagerService for com.mithun.latchscan: false
+10-21 11:23:53.738 D/nativeloader( 3740): Configuring classloader-namespace for other apk /system/framework/android.test.mock.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/lib/x86_64:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/lib/x86_64, permitted_path=/data:/mnt/expand
+10-21 11:23:53.738 W/ithun.latchscan( 3740): ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]})
+10-21 11:23:53.738 D/nativeloader( 3740): Configuring classloader-namespace for other apk /system/framework/android.test.runner.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/lib/x86_64:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/lib/x86_64, permitted_path=/data:/mnt/expand
+10-21 11:23:53.739 W/ithun.latchscan( 3740): ClassLoaderContext shared library size mismatch. Expected=0, found=3 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]#PCL[/system/framework/android.test.runner.jar*2649186567]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]}};PCL[/system/framework/android.test.runner.jar*2649186567:/system/framework/android.test.mock.jar*4109917914:/system/framework/android.test.base.jar*2876549756:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk*1723313098:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes2.dex*1714924868:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes3.dex*2104432875:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk*3473575436:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes2.dex*2211867947:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes3.dex*2314949017:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes4.dex*2389734151:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes5.dex*607463657:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes6.dex*1472564032:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes7.dex*2427641923:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes8.dex*4101698231:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes9.dex*1522655656:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes10.dex*3782886960:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes11.dex*3868718277])
+10-21 11:23:53.739 W/ithun.latchscan( 3740): ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*2649186567]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]#PCL[/system/framework/android.test.runner.jar*2649186567]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]}};PCL[/system/framework/android.test.runner.jar*2649186567:/system/framework/android.test.mock.jar*4109917914:/system/framework/android.test.base.jar*2876549756:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk*1723313098:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes2.dex*1714924868:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes3.dex*2104432875:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk*3473575436:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes2.dex*2211867947:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes3.dex*2314949017:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes4.dex*2389734151:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes5.dex*607463657:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes6.dex*1472564032:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes7.dex*2427641923:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes8.dex*4101698231:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes9.dex*1522655656:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes10.dex*3782886960:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes11.dex*3868718277])
+10-21 11:23:53.748 W/ithun.latchscan( 3740): ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*2649186567:/system/framework/android.test.mock.jar*4109917914]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]#PCL[/system/framework/android.test.runner.jar*2649186567]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]}};PCL[/system/framework/android.test.runner.jar*2649186567:/system/framework/android.test.mock.jar*4109917914:/system/framework/android.test.base.jar*2876549756:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk*1723313098:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes2.dex*1714924868:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes3.dex*2104432875:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk*3473575436:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes2.dex*2211867947:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes3.dex*2314949017:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes4.dex*2389734151:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes5.dex*607463657:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes6.dex*1472564032:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes7.dex*2427641923:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes8.dex*4101698231:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes9.dex*1522655656:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes10.dex*3782886960:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes11.dex*3868718277])
+10-21 11:23:53.759 W/ziparchive( 3740): Unable to open '/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.dm': No such file or directory
+10-21 11:23:53.759 W/ziparchive( 3740): Unable to open '/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.dm': No such file or directory
+10-21 11:23:54.033 I/FontLog ( 1049): Package com.mithun.latchscan has no metadata [CONTEXT service_id=132 ]
+10-21 11:23:54.097 I/BlockstoreStorage( 1289): Clearing Blockstore Data for package com.mithun.latchscan [CONTEXT service_id=258 ]
+10-21 11:23:54.165 I/FontLog ( 1049): Package com.mithun.latchscan.test has no metadata [CONTEXT service_id=132 ]
+10-21 11:23:54.278 W/ziparchive( 3740): Unable to open '/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.dm': No such file or directory
+10-21 11:23:54.278 W/ziparchive( 3740): Unable to open '/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.dm': No such file or directory
+10-21 11:23:56.841 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{ea1d1ea com.google.android.googlequicksearchbox/10119} BLOCKED
+10-21 11:23:56.841 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{ea1d1ea com.google.android.googlequicksearchbox/10119} BLOCKED
+10-21 11:23:56.844 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{dc322b6 com.google.android.apps.messaging/10111} BLOCKED
+10-21 11:23:56.844 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{dc322b6 com.google.android.apps.messaging/10111} BLOCKED
+10-21 11:23:56.844 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{f6d6bb7 com.google.android.settings.intelligence/10107} BLOCKED
+10-21 11:23:56.844 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{f6d6bb7 com.google.android.settings.intelligence/10107} BLOCKED
+10-21 11:23:56.844 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{ef2cf24 com.android.remoteprovisioner/10151} BLOCKED
+10-21 11:23:56.844 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{ef2cf24 com.android.remoteprovisioner/10151} BLOCKED
+10-21 11:23:56.942 I/AndroidJUnitRunner( 3740): newApplication com.mithun.latchscan.LatchApp
+10-21 11:23:57.158 I/AiAiEcho( 1588): EchoSearch: AppFetcherImpl is initialized with [19] apps [time=133, reason=com.mithun.latchscan is added]
+10-21 11:23:57.162 W/ithun.latchscan( 3740): Verification of java.lang.Object kotlinx.coroutines.JobSupport.finalizeFinishingState(kotlinx.coroutines.JobSupport$Finishing, java.lang.Object) took 187.616ms (1071.33 bytecodes/s) (6808B approximate peak alloc)
+10-21 11:23:57.801 D/OpenCV/StaticHelper( 3740): First attempt to load libs
+10-21 11:23:57.801 D/OpenCV/StaticHelper( 3740): Trying to load library opencv_java4
+10-21 11:23:58.013 I/AiAiEcho( 1588): EchoSearch: AppFetcherImpl is initialized with [19] apps [time=12, reason=com.mithun.latchscan.test is added]
+10-21 11:23:58.691 D/OpenCV/StaticHelper( 3740): Library opencv_java4 loaded
+10-21 11:23:58.691 D/OpenCV/StaticHelper( 3740): First attempt to load libs is OK
+10-21 11:23:58.692 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740): General configuration for OpenCV 4.12.0 =====================================
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):   Version control:               4.12.0-dirty
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):   Platform:
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):     Timestamp:                   2025-07-02T13:05:21Z
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):     Host:                        Linux 5.4.0-200-generic x86_64
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):     Target:                      Android 1 x86_64
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):     CMake:                       3.22.1-g37088a8
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):     CMake generator:             Ninja
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):     CMake build tool:            /opt/android-sdk/cmake/3.22.1/bin/ninja
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):     Configuration:               Release
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):     Algorithm Hint:              ALGO_HINT_ACCURATE
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):   CPU/HW features:
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):     Baseline:                    SSE SSE2 SSE3
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):       requested:                 SSE3
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):     Dispatched code generation:  SSE4_1 SSE4_2 AVX FP16 AVX2 AVX512_SKX
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):       SSE4_1 (17 files):         + SSSE3 SSE4_1
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):       SSE4_2 (1 files):          + SSSE3 SSE4_1 POPCNT SSE4_2
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):       AVX (9 files):             + SSSE3 SSE4_1 POPCNT SSE4_2 AVX
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):       FP16 (0 files):            + SSSE3 SSE4_1 POPCNT SSE4_2 AVX FP16
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):       AVX2 (37 files):           + SSSE3 SSE4_1 POPCNT SSE4_2 AVX FP16 AVX2 FMA3
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740):       AVX512_SKX (6 files):      + SSSE3 SSE4_1 POPCNT SSE4_2 AVX FP16 AVX2 FMA3 AVX_512F AVX512_COMMON AVX512_SKX
+10-21 11:23:58.694 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):   C/C++:
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):     Built as dynamic libs?:      NO
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):     C++ standard:                11
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):     C++ Compiler:                /opt/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++  (ver 18.0.3)
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):     C++ flags (Release):         -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security     -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -DNDEBUG
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):     C++ flags (Debug):           -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security     -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -fno-limit-debug-info   -O0 -DDEBUG -D_DEBUG -g
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):     C Compiler:                  /opt/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):     C flags (Release):           -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -DNDEBUG
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):     C flags (Debug):             -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -fno-limit-debug-info   -O0 -DDEBUG -D_DEBUG -g
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):     Linker flags (Release):      -Wl,--exclude-libs,libippicv.a -Wl,--exclude-libs,libippiw.a -Wl,-z,max-page-size=16384 -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -Wl,-z,max-page-size=16384  -Wl,--as-needed -Wl,--no-undefined -Wl,--gc-sections  
+10-21 11:23:58.695 I/OpenCV/StaticHelper( 3740):     Linker flags (Debug):        -Wl,--exclude-libs,libippicv.a -Wl,--exclude-libs,libippiw.a -Wl,-z,max-page-size=16384 -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -Wl,-z,max-page-size=16384  -Wl,--as-needed -Wl,--no-undefined  
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     ccache:                      YES
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     Precompiled headers:         NO
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     Extra dependencies:          z dl m log
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     3rdparty dependencies:       libcpufeatures libprotobuf ade tbb ittnotify libjpeg-turbo libwebp libpng libtiff libopenjp2 IlmImf ipphal ippiw ippicv
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):   OpenCV modules:
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     To be built:                 calib3d core dnn features2d flann gapi highgui imgcodecs imgproc java ml objdetect photo stitching video videoio
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     Disabled:                    world
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     Disabled by dependency:      -
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     Unavailable:                 python2 python3 ts
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     Applications:                -
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     Documentation:               NO
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740):     Non-free algorithms:         NO
+10-21 11:23:58.696 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):   Android NDK:                   /opt/android-sdk/ndk/27.2.12479018 (ver 27.2.12479018)
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     Android ABI:                 x86_64
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     NDK toolchain:               x86_64-linux-android-clang
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     STL type:                    c++_shared
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     Native API level:            21
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):   Android SDK:                   /opt/android-sdk (tools:  build tools: 34.0.0)
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):   GUI:                           NONE
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):   Media I/O: 
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     ZLib:                        z (ver 1.3.0.1)
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     JPEG:                        build-libjpeg-turbo (ver 3.1.0-70)
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):       SIMD Support Request:      YES
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):       SIMD Support:              YES
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     WEBP:                        build (ver decoder: 0x0209, encoder: 0x020f, demux: 0x0107)
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     AVIF:                        NO
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     PNG:                         build (ver 1.6.43)
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):       SIMD Support Request:      YES
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):       SIMD Support:              YES (Intel SSE)
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     TIFF:                        build (ver 42 - 4.6.0)
+10-21 11:23:58.697 I/OpenCV/StaticHelper( 3740):     JPEG 2000:                   build (ver 2.5.3)
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     OpenEXR:                     build (ver 2.3.0)
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     GIF:                         YES
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     HDR:                         YES
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     SUNRASTER:                   YES
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     PXM:                         YES
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     PFM:                         YES
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):   Video I/O:
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):    MEDIANDK:                     YES
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):    NDK Camera:                   NO
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):   Parallel framework:            TBB (ver 2022.1 interface 12150)
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):   Trace:                         YES (with Intel ITT(3.25.4))
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):   Other third-party libraries:
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     Intel IPP:                   2022.1.0 [2022.1.0]
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):            at:                   /home/ci/build/o4a/3rdparty/ippicv/ippicv_lnx/icv
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     Intel IPP IW:                sources (2022.1.0)
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):               at:                /home/ci/build/o4a/3rdparty/ippicv/ippicv_lnx/iw
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     Custom HAL:                  YES (ipp (ver 0.0.1))
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     Protobuf:                    build (3.19.1)
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     Flatbuffers:                 builtin/3rdparty (23.5.9)
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):   Python (for build):            /usr/bin/python3
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):   Java:                          export all functions
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     ant:                         NO
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     Java wrappers:               YES ()
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740):     Java tests:                  NO
+10-21 11:23:58.698 I/OpenCV/StaticHelper( 3740): 
+10-21 11:23:58.699 I/OpenCV/StaticHelper( 3740):   Install to:                    /home/ci/build/o4a/install
+10-21 11:23:58.699 I/OpenCV/StaticHelper( 3740): -----------------------------------------------------------------
+10-21 11:23:58.726 W/ithun.latchscan( 3740): Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:23:58.726 W/ithun.latchscan( 3740): Common causes for lock verification issues are non-optimized dex code
+10-21 11:23:58.726 W/ithun.latchscan( 3740): and incorrect proguard optimizations.
+10-21 11:23:58.726 W/ithun.latchscan( 3740): Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+10-21 11:23:58.727 W/ithun.latchscan( 3740): Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:23:58.727 W/ithun.latchscan( 3740): Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:23:58.734 W/ithun.latchscan( 3740): Method void androidx.compose.runtime.snapshots.SnapshotStateList.update$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+10-21 11:23:58.891 I/TestRequestBuilder( 3740): Scanning classpath to find tests in paths [/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk]
+10-21 11:23:58.893 W/ithun.latchscan( 3740): Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+10-21 11:23:59.576 I/TestRunner( 3740): run started: 13 tests
+10-21 11:23:59.578 I/TestRunner( 3740): started: compressesImageUnderTarget(com.mithun.latchscan.EngineTest)
+10-21 11:24:01.949 I/ithun.latchscan( 3740): Background concurrent copying GC freed 59315(3155KB) AllocSpace objects, 54(50MB) LOS objects, 49% free, 14MB/29MB, paused 40us,4us total 529.475ms
+10-21 11:24:04.607 D/ProfileInstaller( 3740): Installing profile for com.mithun.latchscan
+10-21 11:24:06.837 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{d56671 com.google.android.apps.messaging/10111} BLOCKED
+10-21 11:24:06.837 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{d56671 com.google.android.apps.messaging/10111} BLOCKED
+10-21 11:24:06.837 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{c793c56 com.android.camera2/10143} BLOCKED
+10-21 11:24:06.837 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{c793c56 com.android.camera2/10143} BLOCKED
+10-21 11:24:06.837 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{8514d7 com.google.android.apps.docs/10124} BLOCKED
+10-21 11:24:06.837 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{8514d7 com.google.android.apps.docs/10124} BLOCKED
+10-21 11:24:06.837 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{6c32302 com.google.android.apps.maps/10138} BLOCKED
+10-21 11:24:06.838 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{6c32302 com.google.android.apps.maps/10138} BLOCKED
+10-21 11:24:06.838 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{1fe5d6e com.google.android.calendar/10122} BLOCKED
+10-21 11:24:06.838 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{1fe5d6e com.google.android.calendar/10122} BLOCKED
+10-21 11:24:06.838 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{a4d91c4 com.android.remoteprovisioner/10151} BLOCKED
+10-21 11:24:06.838 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{a4d91c4 com.android.remoteprovisioner/10151} BLOCKED
+10-21 11:24:10.573 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{7066a57 com.google.android.apps.photos/10139} BLOCKED
+10-21 11:24:10.573 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{7066a57 com.google.android.apps.photos/10139} BLOCKED
+10-21 11:24:11.469 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{e563013 com.google.android.gm/10144} BLOCKED
+10-21 11:24:11.469 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{e563013 com.google.android.gm/10144} BLOCKED
+10-21 11:24:11.918 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{716ee2f com.google.android.apps.messaging/10111} BLOCKED
+10-21 11:24:11.918 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{716ee2f com.google.android.apps.messaging/10111} BLOCKED
+10-21 11:24:15.037 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{ad48834 com.google.android.youtube/10141} BLOCKED
+10-21 11:24:15.037 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{ad48834 com.google.android.youtube/10141} BLOCKED
+10-21 11:24:15.038 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{a36065d com.google.android.gm/10144} BLOCKED
+10-21 11:24:15.038 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{a36065d com.google.android.gm/10144} BLOCKED
+10-21 11:24:15.038 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{f5c579f com.google.android.apps.maps/10138} BLOCKED
+10-21 11:24:15.038 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{f5c579f com.google.android.apps.maps/10138} BLOCKED
+10-21 11:24:16.467 I/TestRunner( 3740): finished: compressesImageUnderTarget(com.mithun.latchscan.EngineTest)
+10-21 11:24:16.478 I/TestRunner( 3740): started: detectsPaperOnWoodWithPenAndShadow(com.mithun.latchscan.EngineTest)
+10-21 11:24:16.513 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{c69f64f com.google.android.googlequicksearchbox/10119} BLOCKED
+10-21 11:24:16.513 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{c69f64f com.google.android.googlequicksearchbox/10119} BLOCKED
+10-21 11:24:16.513 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{24421dc com.google.android.gm/10144} BLOCKED
+10-21 11:24:16.513 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{24421dc com.google.android.gm/10144} BLOCKED
+10-21 11:24:17.605 I/ithun.latchscan( 3740): Background concurrent copying GC freed 771(342KB) AllocSpace objects, 71(11MB) LOS objects, 49% free, 5344KB/10MB, paused 28us,3us total 143.811ms
+10-21 11:24:18.351 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{7fd590a com.google.android.settings.intelligence/10107} BLOCKED
+10-21 11:24:18.351 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{7fd590a com.google.android.settings.intelligence/10107} BLOCKED
+10-21 11:24:18.361 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{ea99f98 com.google.android.settings.intelligence/10107} BLOCKED
+10-21 11:24:18.361 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{ea99f98 com.google.android.settings.intelligence/10107} BLOCKED
+10-21 11:24:18.571 I/TestRunner( 3740): finished: detectsPaperOnWoodWithPenAndShadow(com.mithun.latchscan.EngineTest)
+10-21 11:24:18.573 I/TestRunner( 3740): started: warpsAndFiltersAPage(com.mithun.latchscan.EngineTest)
+10-21 11:24:19.240 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{c3629f4 com.google.android.setupwizard/10114} BLOCKED
+10-21 11:24:19.240 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{c3629f4 com.google.android.setupwizard/10114} BLOCKED
+10-21 11:24:19.240 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{a90651d com.google.android.settings.intelligence/10107} BLOCKED
+10-21 11:24:19.240 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{a90651d com.google.android.settings.intelligence/10107} BLOCKED
+10-21 11:24:19.240 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{f70e55a com.google.android.projection.gearhead/10108} BLOCKED
+10-21 11:24:19.240 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{f70e55a com.google.android.projection.gearhead/10108} BLOCKED
+10-21 11:24:19.969 I/TestRunner( 3740): finished: warpsAndFiltersAPage(com.mithun.latchscan.EngineTest)
+10-21 11:24:19.971 I/TestRunner( 3740): started: detectsHardPagesWithTheCornerModel(com.mithun.latchscan.EngineTest)
+10-21 11:24:20.991 I/HibernationPolicy( 4834): ed_rro_vendor__=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.systemui.navbar.twobutton=Thu Jan 01 00:00:00 UTC 1970, com.google.android.as=Wed Oct 21 11:23:33 UTC 2026, com.google.android.gm=Wed Oct 21 11:24:11 UTC 2026, com.android.internal.systemui.navbar.gestural_extra_wide_back=Thu Jan 01 00:00:00 UTC 1970, com.google.android.permissioncontroller=Wed Oct 21 11:23:15 UTC 2026, com.android.systemui.emulation.pixel_3=Thu Jan 01 00:00:00 UTC 1970, com.android.systemui.emulation.pixel_4=Thu Jan 01 00:00:00 UTC 1970, com.android.systemui.emulation.pixel_5=Thu Jan 01 00:00:00 UTC 1970, com.android.systemui.emulation.pixel_6=Thu Jan 01 00:00:00 UTC 1970, com.android.systemui.emulation.pixel_7=Thu Jan 01 00:00:00 UTC 1970, com.google.android.setupwizard=Wed Oct 21 11:23:23 UTC 2026, com.android.emulator.radio.config=Thu Jan 01 00:00:00 UTC 1970, com.google.android.bluetooth=Wed Oct 21 11:23:16 UTC 2026, com.android.providers.settings=Thu Jan 01 00:00:00 UTC 1970, com.android.sharedstoragebackup=Thu Jan 01 00:00:00 UTC 1970, com.android.nfc.auto_generated_rro_product__=Thu Jan 01 00:00:00 UTC 1970, com.android.printspooler=Wed Oct 21 11:23:24 UTC 2026, com.android.emergency.auto_generated_rro_product__=Thu Jan 01 00:00:00 UTC 1970, com.google.android.connectivity.resources.goldfish.overlay=Thu Jan 01 00:00:00 UTC 1970, com.android.dreams.basic=Thu Jan 01 00:00:00 UTC 1970, com.google.android.networkstack.tethering.emulator=Thu Jan 01 00:00:00 UTC 1970, com.android.providers.settings.auto_generated_rro_product__=Thu Jan 01 00:00:00 UTC 1970, com.google.android.as.oss=Wed Oct 21 11:23:28 UTC 2026, com.android.se=Wed Oct 21 11:23:16 UTC 2026, com.android.inputdevices=Thu Jan 01 00:00:00 UTC 1970, com.android.traceur.auto_generated_rro_product__=Thu Jan 01 00:00:00 UTC 1970, com.google.android.apps.wellbeing=Wed Oct 21 11:23:27 UTC 2026, com.google.android.dialer=Wed Oct 21 11:24:04 UTC 2026, com.android.bips=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.emulation.pixel_3=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.emulation.pixel_4=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.emulation.pixel_5=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.emulation.pixel_6=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.emulation.pixel_7=Thu Jan 01 00:00:00 UTC 1970, com.google.android.captiveportallogin=Thu Jan 01 00:00:00 UTC 1970, com.android.musicfx=Thu Jan 01 00:00:00 UTC 1970, com.google.android.apps.docs=Wed Oct 21 11:23:56 UTC 2026, com.google.android.modulemetadata=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.display.cutout.emulation.emu01=Thu Jan 01 00:00:00 UTC 1970, com.google.android.markup=Thu Jan 01 00:00:00 UTC 1970, com.android.providers.settings.auto_generated_rro_vendor__=Thu Jan 01 00:00:00 UTC 1970, com.android.cellbroadcastreceiver=Wed Oct 21 11:23:18 UTC 2026, com.google.android.webview=Wed Oct 21 11:23:35 UTC 2026, com.mithun.latchscan=Wed Oct 21 11:23:52 UTC 2026, com.google.android.networkstack=Wed Oct 21 11:23:16 UTC 2026, com.google.android.contacts=Wed Oct 21 11:23:25 UTC 2026, com.android.server.telecom=Wed Oct 21 11:23:15 UTC 2026, com.android.keychain=Wed Oct 21 11:23:23 UTC 2026, com.android.server.telecom.auto_generated_rro_product__=Thu Jan 01 00:00:00 UTC 1970, com.google.android.overlay.googleconfig=Thu Jan 01 00:00:00 UTC 1970, com.android.chrome=Wed Oct 21 11:23:30 UTC 2026, com.android.bips.auto_generated_rro_product__=Thu Jan 01 00:00:00 UTC 1970, com.google.android.packageinstaller=Thu Jan 01 00:00:00 UTC 1970, com.google.android.apps.customization.pixel=Thu Jan 01 00:00:00 UTC 1970, com.google.android.gms=Wed Oct 21 11:24:11 UTC 2026, com.google.android.gsf=Wed Oct 21 11:23:56 UTC 2026, com.google.android.ims=Wed Oct 21 11:23:55 UTC 2026, com.google.android.tag=Thu Jan 01 00:00:00 UTC 1970, com.google.android.tts=Thu Jan 01 00:00:00 UTC 1970, com.google.android.overlay.permissioncontroller=Thu Jan 01 00:00:00 UTC 1970, com.android.calllogbackup=Thu Jan 01 00:00:00 UTC 1970, com.google.andr
+10-21 11:24:24.381 I/Nearby  ( 5038): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:24:24.517 I/TestRunner( 3740): finished: detectsHardPagesWithTheCornerModel(com.mithun.latchscan.EngineTest)
+10-21 11:24:24.524 I/TestRunner( 3740): started: scanSessionSavesAndExportsADocument(com.mithun.latchscan.EngineTest)
+10-21 11:24:25.385 I/TestRunner( 3740): finished: scanSessionSavesAndExportsADocument(com.mithun.latchscan.EngineTest)
+10-21 11:24:25.388 I/TestRunner( 3740): started: compressesPdfUnderTarget(com.mithun.latchscan.EngineTest)
+10-21 11:24:26.978 I/ithun.latchscan( 3740): Background concurrent copying GC freed 46(32KB) AllocSpace objects, 2(26MB) LOS objects, 50% free, 17MB/34MB, paused 50us,6us total 124.998ms
+10-21 11:24:27.455 I/Nearby  ( 1289): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:24:27.827 I/ithun.latchscan( 3740): Background young concurrent copying GC freed 355(121KB) AllocSpace objects, 20(11MB) LOS objects, 0% free, 45MB/45MB, paused 13us,5us total 228.079ms
+10-21 11:24:28.004 I/ithun.latchscan( 3740): Background concurrent copying GC freed 616(140KB) AllocSpace objects, 18(33MB) LOS objects, 49% free, 11MB/23MB, paused 24us,3us total 124.634ms
+10-21 11:24:28.108 I/Nearby  ( 1049): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:24:28.225 I/Nearby  ( 1049): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:24:29.587 I/ithun.latchscan( 3740): Background young concurrent copying GC freed 66(203KB) AllocSpace objects, 57(11MB) LOS objects, 60% free, 7047KB/17MB, paused 57us,4us total 231.079ms
+10-21 11:24:32.242 I/TestRunner( 3740): finished: compressesPdfUnderTarget(com.mithun.latchscan.EngineTest)
+10-21 11:24:32.260 I/TestRunner( 3740): started: rejectsNonPdfInput(com.mithun.latchscan.EngineTest)
+10-21 11:24:32.285 I/TestRunner( 3740): finished: rejectsNonPdfInput(com.mithun.latchscan.EngineTest)
+10-21 11:24:32.286 I/TestRunner( 3740): started: cornerModelLoadsAndRuns(com.mithun.latchscan.EngineTest)
+10-21 11:24:32.673 I/TestRunner( 3740): finished: cornerModelLoadsAndRuns(com.mithun.latchscan.EngineTest)
+10-21 11:24:32.675 I/TestRunner( 3740): started: mergesMixedDocumentsToPdfAndDocx(com.mithun.latchscan.EngineTest)
+10-21 11:24:33.093 I/TestRunner( 3740): finished: mergesMixedDocumentsToPdfAndDocx(com.mithun.latchscan.EngineTest)
+10-21 11:24:33.095 I/TestRunner( 3740): started: findsNothingInAnEmptyScene(com.mithun.latchscan.EngineTest)
+10-21 11:24:34.088 I/TestRunner( 3740): finished: findsNothingInAnEmptyScene(com.mithun.latchscan.EngineTest)
+10-21 11:24:34.090 I/TestRunner( 3740): started: buildsMergesAndCountsPdfs(com.mithun.latchscan.EngineTest)
+10-21 11:24:34.287 I/TestRunner( 3740): finished: buildsMergesAndCountsPdfs(com.mithun.latchscan.EngineTest)
+10-21 11:24:34.289 I/TestRunner( 3740): started: detectsPaperOnDarkAndLightTables(com.mithun.latchscan.EngineTest)
+10-21 11:24:34.634 I/TestRunner( 3740): finished: detectsPaperOnDarkAndLightTables(com.mithun.latchscan.EngineTest)
+10-21 11:24:34.637 I/TestRunner( 3740): started: walkThroughEveryScreen(com.mithun.latchscan.UiFlowTest)
+10-21 11:24:35.050 W/ithun.latchscan( 3740): Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+10-21 11:24:35.050 W/ithun.latchscan( 3740): Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+10-21 11:24:35.050 W/ithun.latchscan( 3740): Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+10-21 11:24:35.137 W/ithun.latchscan( 3740): Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+10-21 11:24:35.141 W/ithun.latchscan( 3740): Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+10-21 11:24:35.165 W/ithun.latchscan( 3740): Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+10-21 11:24:35.195 I/ActivityTaskManager(  478): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.mithun.latchscan/.MainActivity} from uid 10174
+10-21 11:24:35.480 D/CoreBackPreview(  478): Window{726037b u0 Splash Screen com.mithun.latchscan}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a6181f1, mPriority=0}
+10-21 11:24:35.571 D/LifecycleMonitor( 3740): Lifecycle status change: com.mithun.latchscan.MainActivity@139d6c1 in: PRE_ON_CREATE
+10-21 11:24:36.218 D/LifecycleMonitor( 3740): Lifecycle status change: com.mithun.latchscan.MainActivity@139d6c1 in: CREATED
+10-21 11:24:36.219 V/ActivityScenario( 3740): Update currentActivityStage to CREATED, currentActivity=com.mithun.latchscan.MainActivity@139d6c1
+10-21 11:24:36.220 D/LifecycleMonitor( 3740): Lifecycle status change: com.mithun.latchscan.MainActivity@139d6c1 in: STARTED
+10-21 11:24:36.221 V/ActivityScenario( 3740): Update currentActivityStage to STARTED, currentActivity=com.mithun.latchscan.MainActivity@139d6c1
+10-21 11:24:36.769 D/LifecycleMonitor( 3740): Lifecycle status change: com.mithun.latchscan.MainActivity@139d6c1 in: RESUMED
+10-21 11:24:36.769 V/ActivityScenario( 3740): Update currentActivityStage to RESUMED, currentActivity=com.mithun.latchscan.MainActivity@139d6c1
+10-21 11:24:36.926 D/CoreBackPreview(  478): Window{3d93340 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f469bbe, mPriority=0}
+10-21 11:24:37.591 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{a3e3422 com.google.android.as/10118} BLOCKED
+10-21 11:24:38.896 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{261b4b8 com.google.android.as/10118} BLOCKED
+10-21 11:24:38.896 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{261b4b8 com.google.android.as/10118} BLOCKED
+10-21 11:24:40.659 W/ziparchive(  478): Unable to open '/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.dm': No such file or directory
+10-21 11:24:40.675 I/ActivityTaskManager(  478): Displayed com.mithun.latchscan/.MainActivity: +5s445ms
+10-21 11:24:40.779 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:24:41.704 W/InputManager-JNI(  478): Input channel object '726037b Splash Screen com.mithun.latchscan (client)' was disposed without first being removed with the input manager!
+10-21 11:24:41.788 D/CoreBackPreview(  478): Window{726037b u0 Splash Screen com.mithun.latchscan EXITING}: Setting back callback null
+10-21 11:24:42.886 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{aed5511 com.google.android.gm/10144} BLOCKED
+10-21 11:24:42.886 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{aed5511 com.google.android.gm/10144} BLOCKED
+10-21 11:24:43.057 I/AndroidRuntime( 4372): VM exiting with result code 0, cleanup skipped.
+10-21 11:24:43.326 I/AndroidRuntime( 5366): VM exiting with result code 0, cleanup skipped.
+10-21 11:24:47.739 I/BlockstoreStorage( 1289): Clearing Blockstore Data for package com.mithun.latchscan.test [CONTEXT service_id=258 ]
+10-21 11:24:48.872 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{32560d9 com.google.android.googlequicksearchbox/10119} BLOCKED
+10-21 11:24:48.872 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{32560d9 com.google.android.googlequicksearchbox/10119} BLOCKED
+10-21 11:24:49.321 I/ithun.latchscan( 3740): NativeAlloc concurrent copying GC freed 112071(4061KB) AllocSpace objects, 2(48KB) LOS objects, 49% free, 8617KB/16MB, paused 9.217ms,7us total 508.576ms
+10-21 11:24:54.651 I/ithun.latchscan( 3740): NativeAlloc concurrent copying GC freed 83146(3285KB) AllocSpace objects, 25(4868KB) LOS objects, 49% free, 7997KB/15MB, paused 27us,7us total 499.751ms
+10-21 11:24:56.691 D/CoreBackPreview(  478): Window{5757da8 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f45ac00, mPriority=0}
+10-21 11:24:57.212 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:24:58.336 I/AndroidRuntime( 5561): VM exiting with result code 0, cleanup skipped.
+10-21 11:24:59.029 D/CoreBackPreview(  478): Window{5757da8 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback null
+10-21 11:24:59.091 W/InputManager-JNI(  478): Input channel object '5757da8 com.mithun.latchscan/com.mithun.latchscan.MainActivity (client)' was disposed without first being removed with the input manager!
+10-21 11:24:59.352 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:24:59.513 D/CoreBackPreview(  478): Window{b53f187 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3a374d, mPriority=0}
+10-21 11:25:00.104 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:25:02.015 D/CoreBackPreview(  478): Window{b53f187 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback null
+10-21 11:25:02.205 I/AndroidRuntime( 5656): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:02.236 W/InputManager-JNI(  478): Input channel object 'b53f187 com.mithun.latchscan/com.mithun.latchscan.MainActivity (client)' was disposed without first being removed with the input manager!
+10-21 11:25:02.587 W/ithun.latchscan( 3740): Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateMap.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:25:02.587 W/ithun.latchscan( 3740): Method void androidx.compose.runtime.snapshots.SnapshotStateMap.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:25:02.590 W/ithun.latchscan( 3740): Method boolean androidx.compose.runtime.snapshots.SnapshotStateMap.removeIf$runtime_release(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:25:03.420 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:25:03.840 I/AndroidRuntime( 5687): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:04.888 W/ithun.latchscan( 3740): Cleared Reference was only reachable from finalizer (only reported once)
+10-21 11:25:04.981 I/AndroidRuntime( 5717): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:05.854 I/AndroidRuntime( 5740): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:06.804 I/AndroidRuntime( 5764): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:07.513 I/ithun.latchscan( 3740): Compiler allocated 4355KB to compile void android.view.ViewRootImpl.performTraversals()
+10-21 11:25:07.730 I/AndroidRuntime( 5808): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:07.922 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{78bb6c1 com.google.android.as/10118} BLOCKED
+10-21 11:25:07.923 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{78bb6c1 com.google.android.as/10118} BLOCKED
+10-21 11:25:08.398 I/AndroidRuntime( 5833): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:08.478 I/AndroidRuntime( 5854): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:08.575 I/AndroidRuntime( 5872): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:08.806 I/AndroidRuntime( 5890): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:08.851 D/CoreBackPreview(  478): Window{cd560ea u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@9388daf, mPriority=0}
+10-21 11:25:09.358 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:25:09.453 I/AndroidRuntime( 5913): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:09.690 I/AndroidRuntime( 5934): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:09.984 I/AndroidRuntime( 5996): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:10.181 I/AndroidRuntime( 6014): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:10.318 I/AndroidRuntime( 6034): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:10.471 D/CoreBackPreview(  478): Window{cd560ea u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback null
+10-21 11:25:10.497 W/InputManager-JNI(  478): Input channel object 'cd560ea com.mithun.latchscan/com.mithun.latchscan.MainActivity (client)' was disposed without first being removed with the input manager!
+10-21 11:25:10.566 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:25:10.913 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{a1ae59d com.google.android.settings.intelligence/10107} BLOCKED
+10-21 11:25:10.913 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{a1ae59d com.google.android.settings.intelligence/10107} BLOCKED
+10-21 11:25:15.179 W/ithun.latchscan( 3740): Verification of androidx.camera.camera2.internal.compat.CameraManagerCompat$CameraManagerCompatImpl androidx.camera.camera2.internal.compat.CameraManagerCompat$CameraManagerCompatImpl.from(android.content.Context, android.os.Handler) took 119.916ms (333.57 bytecodes/s) (2336B approximate peak alloc)
+10-21 11:25:17.638 I/AppsFilter(  478): interaction: PackageSetting{c1b45d5 com.mithun.latchscan.test/10175} -> PackageSetting{d8eb0cc com.google.android.googlequicksearchbox/10119} BLOCKED
+10-21 11:25:17.638 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{d8eb0cc com.google.android.googlequicksearchbox/10119} BLOCKED
+10-21 11:25:19.608 I/ithun.latchscan( 3740): NativeAlloc concurrent copying GC freed 136005(5479KB) AllocSpace objects, 6(120KB) LOS objects, 49% free, 8981KB/17MB, paused 31us,6us total 521.695ms
+10-21 11:25:20.893 I/CameraService(  414): CameraService::connect call (PID 3740 "com.mithun.latchscan", camera ID 1) and Camera API version 2
+10-21 11:25:20.929 I/Camera2ClientBase(  414): Camera 1: Opened. Client: com.mithun.latchscan (PID 3740, UID 10174)
+10-21 11:25:22.918 W/ithun.latchscan( 3740): Long monitor contention with owner CameraX-camerax_high_priority (6243) at androidx.camera.core.ImageProxy androidx.camera.core.AndroidImageReaderProxy.acquireLatestImage()(AndroidImageReaderProxy.java:76) waiters=0 in void androidx.camera.core.AndroidImageReaderProxy.lambda$setOnImageAvailableListener$1$androidx-camera-core-AndroidImageReaderProxy(java.util.concurrent.Executor, androidx.camera.core.impl.ImageReaderProxy$OnImageAvailableListener, android.media.ImageReader) for 398ms
+10-21 11:25:28.465 I/AndroidRuntime( 6262): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:28.684 I/ithun.latchscan( 3740): NativeAlloc concurrent copying GC freed 72557(3332KB) AllocSpace objects, 9(2444KB) LOS objects, 49% free, 11MB/23MB, paused 26us,12us total 542.372ms
+10-21 11:25:29.099 I/AndroidRuntime( 6281): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:29.731 I/AndroidRuntime( 6298): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:30.196 I/AndroidRuntime( 6316): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:30.627 W/ithun.latchscan( 3740): Long monitor contention with owner pool-4-thread-1 (6244) at com.mithun.latchscan.scanner.CornerModel$Result com.mithun.latchscan.scanner.CornerModel.predict(org.opencv.core.Mat)(CornerModel.kt:33) waiters=0 in com.mithun.latchscan.scanner.CornerModel$Result com.mithun.latchscan.scanner.CornerModel.predict(org.opencv.core.Mat) for 1.846s
+10-21 11:25:30.635 I/AndroidRuntime( 6334): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:34.137 W/ithun.latchscan( 3740): Long monitor contention with owner DefaultDispatcher-worker-4 (5113) at com.mithun.latchscan.scanner.CornerModel$Result com.mithun.latchscan.scanner.CornerModel.predict(org.opencv.core.Mat)(CornerModel.kt:33) waiters=0 in com.mithun.latchscan.scanner.CornerModel$Result com.mithun.latchscan.scanner.CornerModel.predict(org.opencv.core.Mat) for 3.188s
+10-21 11:25:36.369 W/ithun.latchscan( 3740): Long monitor contention with owner CameraX-core_camera_0 (6134) at void android.hardware.camera2.impl.CameraDeviceImpl.close()(CameraDeviceImpl.java:1436) waiters=0 in void android.hardware.camera2.impl.CameraDeviceImpl$CameraDeviceCallbacks.onCaptureStarted(android.hardware.camera2.impl.CaptureResultExtras, long) for 394ms
+10-21 11:25:37.876 I/AndroidRuntime( 6373): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:37.981 I/AndroidRuntime( 6391): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:38.058 I/AndroidRuntime( 6408): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:38.130 I/AndroidRuntime( 6426): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:38.189 I/AndroidRuntime( 6444): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:38.989 I/ithun.latchscan( 3740): Compiler allocated 4300KB to compile void com.mithun.latchscan.scanner.CropScreenKt.CropEditor(java.io.File, com.mithun.latchscan.data.Quad, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function0, androidx.compose.runtime.Composer, int)
+10-21 11:25:39.567 W/ithun.latchscan( 3740): Suspending all threads took: 5.484ms
+10-21 11:25:39.621 I/CameraService(  414): CameraService::connect call (PID 3740 "com.mithun.latchscan", camera ID 1) and Camera API version 2
+10-21 11:25:39.646 I/ithun.latchscan( 3740): NativeAlloc concurrent copying GC freed 89728(3408KB) AllocSpace objects, 30(8336KB) LOS objects, 49% free, 10216KB/19MB, paused 10.019ms,5.559ms total 512.673ms
+10-21 11:25:39.667 I/Camera2ClientBase(  414): Camera 1: Opened. Client: com.mithun.latchscan (PID 3740, UID 10174)
+10-21 11:25:39.728 I/Camera2ClientBase(  414): Closed Camera 1. Client was: com.mithun.latchscan (PID 3740, UID 10174)
+10-21 11:25:45.613 I/AndroidRuntime( 6522): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:45.963 I/AndroidRuntime( 6545): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:46.270 I/AndroidRuntime( 6567): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:46.416 I/AndroidRuntime( 6586): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:46.483 I/AndroidRuntime( 6605): VM exiting with result code 0, cleanup skipped.
+10-21 11:25:47.596 I/ithun.latchscan( 3740): Compiler allocated 8142KB to compile void com.mithun.latchscan.ui.DocumentScreenKt.DocumentScreen(java.lang.String, kotlin.jvm.functions.Function0, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function0, androidx.compose.runtime.Composer, int)
+10-21 11:25:48.545 I/ActivityTaskManager(  478): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} from uid 10174
+10-21 11:25:49.014 D/LifecycleMonitor( 3740): Lifecycle status change: com.mithun.latchscan.MainActivity@139d6c1 in: PAUSED
+10-21 11:25:49.014 V/ActivityScenario( 3740): Update currentActivityStage to PAUSED, currentActivity=com.mithun.latchscan.MainActivity@139d6c1
+10-21 11:25:49.132 D/CoreBackPreview(  478): Window{bdedb49 u0 Splash Screen com.mithun.latchscan.test}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@c352e3f, mPriority=0}
+10-21 11:25:49.193 I/ActivityManager(  478): Start proc 6639:com.mithun.latchscan.test/u0a175 for next-top-activity {com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}
+10-21 11:25:49.204 I/.latchscan.test( 6639): Late-enabling -Xcheck:jni
+10-21 11:25:49.527 I/.latchscan.test( 6639): Using CollectorTypeCC GC.
+10-21 11:25:49.530 W/.latchscan.test( 6639): Unexpected CPU variant for x86: x86_64.
+10-21 11:25:49.530 W/.latchscan.test( 6639): Known variants: atom, sandybridge, silvermont, kabylake, default
+10-21 11:25:49.661 I/AppsFilter(  478): interaction: PackageSetting{ed24cda com.mithun.latchscan.test/10175} -> PackageSetting{d91550b com.google.android.apps.messaging/10111} BLOCKED
+10-21 11:25:49.661 I/AppsFilter(  478): interaction: PackageSetting{dd7dcdb com.mithun.latchscan/10174} -> PackageSetting{d91550b com.google.android.apps.messaging/10111} BLOCKED
+10-21 11:25:50.210 D/nativeloader( 6639): Configuring classloader-namespace for other apk /system/framework/android.test.mock.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.mithun.latchscan.test
+10-21 11:25:50.217 W/.latchscan.test( 6639): ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]})
+10-21 11:25:50.220 D/nativeloader( 6639): Configuring classloader-namespace for other apk /system/framework/android.test.runner.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.mithun.latchscan.test
+10-21 11:25:50.220 W/ziparchive( 6639): Unable to open '/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.dm': No such file or directory
+10-21 11:25:50.220 W/ziparchive( 6639): Unable to open '/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.dm': No such file or directory
+10-21 11:25:50.261 D/nativeloader( 6639): Configuring classloader-namespace for other apk /data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.mithun.latchscan.test
+10-21 11:25:50.271 V/GraphicsEnvironment( 6639): ANGLE Developer option for 'com.mithun.latchscan.test' set to: 'default'
+10-21 11:25:50.271 V/GraphicsEnvironment( 6639): ANGLE GameManagerService for com.mithun.latchscan.test: false
+10-21 11:25:50.389 D/LifecycleMonitor( 3740): Lifecycle status change: com.mithun.latchscan.MainActivity@139d6c1 in: STOPPED
+10-21 11:25:50.389 V/ActivityScenario( 3740): Update currentActivityStage to STOPPED, currentActivity=com.mithun.latchscan.MainActivity@139d6c1
+10-21 11:25:50.401 D/CoreBackPreview(  478): Window{3be7297 u0 com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f75ec6d, mPriority=0}
+10-21 11:25:50.478 D/LifecycleMonitor( 3740): Lifecycle status change: com.mithun.latchscan.MainActivity@139d6c1 in: DESTROYED
+10-21 11:25:50.584 D/CoreBackPreview(  478): Window{3d93340 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback null
+10-21 11:25:50.669 W/InputManager-JNI(  478): Input channel object '3d93340 com.mithun.latchscan/com.mithun.latchscan.MainActivity (client)' was disposed without first being removed with the input manager!
+10-21 11:25:50.718 I/TestRunner( 3740): finished: walkThroughEveryScreen(com.mithun.latchscan.UiFlowTest)
+10-21 11:25:50.721 I/TestRunner( 3740): run finished: 13 tests, 0 failed, 0 ignored
+10-21 11:25:50.913 W/ActivityTaskManager(  478): Activity top resumed state loss timeout for ActivityRecord{c6b174d u0 com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} t10 f}}
+10-21 11:25:50.953 W/ActivityTaskManager(  478): Activity pause timeout for ActivityRecord{c6b174d u0 com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} t10 f}}
+10-21 11:25:51.358 I/ActivityManager(  478): Force stopping com.mithun.latchscan appid=10174 user=0: finished inst
+10-21 11:25:51.362 I/ActivityManager(  478): Killing 3740:com.mithun.latchscan/u0a174 (adj 0): stop com.mithun.latchscan due to finished inst
+10-21 11:25:51.365 I/AndroidRuntime( 3703): VM exiting with result code 0.
+10-21 11:25:51.756 I/Camera2ClientBase(  414): Closed Camera 1. Client was: com.mithun.latchscan (PID 3740, UID 10174)
+10-21 11:25:51.850 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, true)
+10-21 11:25:51.928 V/ActivityManager(  478): Got obituary of 3740:com.mithun.latchscan
+10-21 11:25:52.399 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, true)
+10-21 11:25:52.589 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, true)
+10-21 11:25:53.329 D/CoreBackPreview(  478): Window{3be7297 u0 com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}: Setting back callback null
+10-21 11:25:53.330 W/InputManager-JNI(  478): Input channel object '3be7297 com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-21 11:25:53.344 D/CoreBackPreview(  478): Window{bdedb49 u0 Splash Screen com.mithun.latchscan.test}: Setting back callback null
+10-21 11:25:53.345 W/InputManager-JNI(  478): Input channel object 'bdedb49 Splash Screen com.mithun.latchscan.test (client)' was disposed without first being removed with the input manager!
+10-21 11:25:55.715 D/AndroidRuntime( 6744): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-21 11:25:55.755 I/AndroidRuntime( 6744): Using default boot image
+10-21 11:25:55.755 I/AndroidRuntime( 6744): Leaving lock profiling enabled
+10-21 11:25:56.149 D/AndroidRuntime( 6744): Calling main entry com.android.commands.am.Am
+10-21 11:25:56.161 I/ActivityManager(  478): Force stopping com.mithun.latchscan appid=10174 user=0: start instr
+10-21 11:25:56.178 I/ActivityManager(  478): Start proc 6777:com.mithun.latchscan/u0a174 for added application com.mithun.latchscan
+10-21 11:25:56.212 I/ithun.latchscan( 6777): Late-enabling -Xcheck:jni
+10-21 11:25:56.313 I/ithun.latchscan( 6777): Using CollectorTypeCC GC.
+10-21 11:25:56.313 W/ithun.latchscan( 6777): Unexpected CPU variant for x86: x86_64.
+10-21 11:25:56.313 W/ithun.latchscan( 6777): Known variants: atom, sandybridge, silvermont, kabylake, default
+10-21 11:25:56.301 W/.latchscan.test( 6639): Cleared Reference was only reachable from finalizer (only reported once)
+10-21 11:25:56.388 W/ActivityThread( 6777): Package uses different ABI(s) than its instrumentation: package[com.mithun.latchscan]: x86_64, null instrumentation[com.mithun.latchscan.test]: null, null
+10-21 11:25:56.393 W/ithun.latchscan( 6777): ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*2649186567])
+10-21 11:25:56.394 W/ithun.latchscan( 6777): ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*2649186567:/system/framework/android.test.mock.jar*4109917914])
+10-21 11:25:56.395 W/ziparchive( 6777): Unable to open '/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.dm': No such file or directory
+10-21 11:25:56.395 W/ziparchive( 6777): Unable to open '/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.dm': No such file or directory
+10-21 11:25:56.433 W/ziparchive( 6777): Unable to open '/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.dm': No such file or directory
+10-21 11:25:56.433 W/ziparchive( 6777): Unable to open '/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.dm': No such file or directory
+10-21 11:25:57.095 D/nativeloader( 6777): Configuring classloader-namespace for other apk /system/framework/android.test.runner.jar:/system/framework/android.test.mock.jar:/system/framework/android.test.base.jar:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/lib/x86_64:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/lib/x86_64:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!/lib/x86_64:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.mithun.latchscan
+10-21 11:25:57.103 V/GraphicsEnvironment( 6777): ANGLE Developer option for 'com.mithun.latchscan' set to: 'default'
+10-21 11:25:57.103 V/GraphicsEnvironment( 6777): ANGLE GameManagerService for com.mithun.latchscan: false
+10-21 11:25:57.105 D/nativeloader( 6777): Configuring classloader-namespace for other apk /system/framework/android.test.mock.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/lib/x86_64:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/lib/x86_64, permitted_path=/data:/mnt/expand
+10-21 11:25:57.106 W/ithun.latchscan( 6777): ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]})
+10-21 11:25:57.106 D/nativeloader( 6777): Configuring classloader-namespace for other apk /system/framework/android.test.runner.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/lib/x86_64:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/lib/x86_64, permitted_path=/data:/mnt/expand
+10-21 11:25:57.107 W/ithun.latchscan( 6777): ClassLoaderContext shared library size mismatch. Expected=0, found=3 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]#PCL[/system/framework/android.test.runner.jar*2649186567]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]}};PCL[/system/framework/android.test.runner.jar*2649186567:/system/framework/android.test.mock.jar*4109917914:/system/framework/android.test.base.jar*2876549756:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk*1723313098:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes2.dex*1714924868:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes3.dex*2104432875:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk*3473575436:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes2.dex*2211867947:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes3.dex*2314949017:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes4.dex*2389734151:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes5.dex*607463657:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes6.dex*1472564032:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes7.dex*2427641923:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes8.dex*4101698231:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes9.dex*1522655656:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes10.dex*3782886960:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes11.dex*3868718277])
+10-21 11:25:57.107 W/ithun.latchscan( 6777): ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*2649186567]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]#PCL[/system/framework/android.test.runner.jar*2649186567]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]}};PCL[/system/framework/android.test.runner.jar*2649186567:/system/framework/android.test.mock.jar*4109917914:/system/framework/android.test.base.jar*2876549756:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk*1723313098:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes2.dex*1714924868:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes3.dex*2104432875:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk*3473575436:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes2.dex*2211867947:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes3.dex*2314949017:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes4.dex*2389734151:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes5.dex*607463657:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes6.dex*1472564032:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes7.dex*2427641923:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes8.dex*4101698231:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes9.dex*1522655656:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes10.dex*3782886960:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes11.dex*3868718277])
+10-21 11:25:57.107 W/ithun.latchscan( 6777): ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*2649186567:/system/framework/android.test.mock.jar*4109917914]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]#PCL[/system/framework/android.test.runner.jar*2649186567]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]}};PCL[/system/framework/android.test.runner.jar*2649186567:/system/framework/android.test.mock.jar*4109917914:/system/framework/android.test.base.jar*2876549756:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk*1723313098:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes2.dex*1714924868:/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.apk!classes3.dex*2104432875:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk*3473575436:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes2.dex*2211867947:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes3.dex*2314949017:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes4.dex*2389734151:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes5.dex*607463657:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes6.dex*1472564032:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes7.dex*2427641923:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes8.dex*4101698231:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes9.dex*1522655656:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes10.dex*3782886960:/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.apk!classes11.dex*3868718277])
+10-21 11:25:57.108 W/ziparchive( 6777): Unable to open '/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.dm': No such file or directory
+10-21 11:25:57.108 W/ziparchive( 6777): Unable to open '/data/app/~~eK3dydU-e3L7LIlQRE0h8g==/com.mithun.latchscan.test-QQFNi7DzQNLjzQ3W-3Jj7g==/base.dm': No such file or directory
+10-21 11:25:57.130 W/ziparchive( 6777): Unable to open '/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.dm': No such file or directory
+10-21 11:25:57.130 W/ziparchive( 6777): Unable to open '/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.dm': No such file or directory
+10-21 11:25:57.920 I/AndroidJUnitRunner( 6777): newApplication com.mithun.latchscan.LatchApp
+10-21 11:25:57.965 D/OpenCV/StaticHelper( 6777): First attempt to load libs
+10-21 11:25:57.969 D/OpenCV/StaticHelper( 6777): Trying to load library opencv_java4
+10-21 11:25:58.002 D/OpenCV/StaticHelper( 6777): Library opencv_java4 loaded
+10-21 11:25:58.002 D/OpenCV/StaticHelper( 6777): First attempt to load libs is OK
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): General configuration for OpenCV 4.12.0 =====================================
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Version control:               4.12.0-dirty
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Platform:
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Timestamp:                   2025-07-02T13:05:21Z
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Host:                        Linux 5.4.0-200-generic x86_64
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Target:                      Android 1 x86_64
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     CMake:                       3.22.1-g37088a8
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     CMake generator:             Ninja
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     CMake build tool:            /opt/android-sdk/cmake/3.22.1/bin/ninja
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Configuration:               Release
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Algorithm Hint:              ALGO_HINT_ACCURATE
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   CPU/HW features:
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Baseline:                    SSE SSE2 SSE3
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       requested:                 SSE3
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Dispatched code generation:  SSE4_1 SSE4_2 AVX FP16 AVX2 AVX512_SKX
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       SSE4_1 (17 files):         + SSSE3 SSE4_1
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       SSE4_2 (1 files):          + SSSE3 SSE4_1 POPCNT SSE4_2
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       AVX (9 files):             + SSSE3 SSE4_1 POPCNT SSE4_2 AVX
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       FP16 (0 files):            + SSSE3 SSE4_1 POPCNT SSE4_2 AVX FP16
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       AVX2 (37 files):           + SSSE3 SSE4_1 POPCNT SSE4_2 AVX FP16 AVX2 FMA3
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       AVX512_SKX (6 files):      + SSSE3 SSE4_1 POPCNT SSE4_2 AVX FP16 AVX2 FMA3 AVX_512F AVX512_COMMON AVX512_SKX
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   C/C++:
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Built as dynamic libs?:      NO
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     C++ standard:                11
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     C++ Compiler:                /opt/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++  (ver 18.0.3)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     C++ flags (Release):         -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security     -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -DNDEBUG
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     C++ flags (Debug):           -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security     -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -fno-limit-debug-info   -O0 -DDEBUG -D_DEBUG -g
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     C Compiler:                  /opt/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     C flags (Release):           -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -DNDEBUG
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     C flags (Debug):             -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments  -fvisibility=hidden -fvisibility-inlines-hidden  -fno-limit-debug-info   -O0 -DDEBUG -D_DEBUG -g
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Linker flags (Release):      -Wl,--exclude-libs,libippicv.a -Wl,--exclude-libs,libippiw.a -Wl,-z,max-page-size=16384 -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -Wl,-z,max-page-size=16384  -Wl,--as-needed -Wl,--no-undefined -Wl,--gc-sections  
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Linker flags (Debug):        -Wl,--exclude-libs,libippicv.a -Wl,--exclude-libs,libippiw.a -Wl,-z,max-page-size=16384 -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -Wl,-z,max-page-size=16384  -Wl,--as-needed -Wl,--no-undefined  
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     ccache:                      YES
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Precompiled headers:         NO
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Extra dependencies:          z dl m log
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     3rdparty dependencies:       libcpufeatures libprotobuf ade tbb ittnotify libjpeg-turbo libwebp libpng libtiff libopenjp2 IlmImf ipphal ippiw ippicv
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   OpenCV modules:
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     To be built:                 calib3d core dnn features2d flann gapi highgui imgcodecs imgproc java ml objdetect photo stitching video videoio
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Disabled:                    world
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Disabled by dependency:      -
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Unavailable:                 python2 python3 ts
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Applications:                -
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Documentation:               NO
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Non-free algorithms:         NO
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Android NDK:                   /opt/android-sdk/ndk/27.2.12479018 (ver 27.2.12479018)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Android ABI:                 x86_64
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     NDK toolchain:               x86_64-linux-android-clang
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     STL type:                    c++_shared
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Native API level:            21
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Android SDK:                   /opt/android-sdk (tools:  build tools: 34.0.0)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   GUI:                           NONE
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Media I/O: 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     ZLib:                        z (ver 1.3.0.1)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     JPEG:                        build-libjpeg-turbo (ver 3.1.0-70)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       SIMD Support Request:      YES
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       SIMD Support:              YES
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     WEBP:                        build (ver decoder: 0x0209, encoder: 0x020f, demux: 0x0107)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     AVIF:                        NO
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     PNG:                         build (ver 1.6.43)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       SIMD Support Request:      YES
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):       SIMD Support:              YES (Intel SSE)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     TIFF:                        build (ver 42 - 4.6.0)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     JPEG 2000:                   build (ver 2.5.3)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     OpenEXR:                     build (ver 2.3.0)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     GIF:                         YES
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     HDR:                         YES
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     SUNRASTER:                   YES
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     PXM:                         YES
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     PFM:                         YES
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Video I/O:
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):    MEDIANDK:                     YES
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):    NDK Camera:                   NO
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Parallel framework:            TBB (ver 2022.1 interface 12150)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Trace:                         YES (with Intel ITT(3.25.4))
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Other third-party libraries:
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Intel IPP:                   2022.1.0 [2022.1.0]
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):            at:                   /home/ci/build/o4a/3rdparty/ippicv/ippicv_lnx/icv
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Intel IPP IW:                sources (2022.1.0)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):               at:                /home/ci/build/o4a/3rdparty/ippicv/ippicv_lnx/iw
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Custom HAL:                  YES (ipp (ver 0.0.1))
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Protobuf:                    build (3.19.1)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     Flatbuffers:                 builtin/3rdparty (23.5.9)
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Python (for build):            /usr/bin/python3
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):   Java:                          export all functions
+10-21 11:25:58.003 I/OpenCV/StaticHelper( 6777):     ant:                         NO
+10-21 11:25:58.004 I/OpenCV/StaticHelper( 6777):     Java wrappers:               YES ()
+10-21 11:25:58.004 I/OpenCV/StaticHelper( 6777):     Java tests:                  NO
+10-21 11:25:58.004 I/OpenCV/StaticHelper( 6777): 
+10-21 11:25:58.004 I/OpenCV/StaticHelper( 6777):   Install to:                    /home/ci/build/o4a/install
+10-21 11:25:58.004 I/OpenCV/StaticHelper( 6777): -----------------------------------------------------------------
+10-21 11:25:58.015 W/ithun.latchscan( 6777): Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:25:58.015 W/ithun.latchscan( 6777): Common causes for lock verification issues are non-optimized dex code
+10-21 11:25:58.015 W/ithun.latchscan( 6777): and incorrect proguard optimizations.
+10-21 11:25:58.015 W/ithun.latchscan( 6777): Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+10-21 11:25:58.015 W/ithun.latchscan( 6777): Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:25:58.015 W/ithun.latchscan( 6777): Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:25:58.015 W/ithun.latchscan( 6777): Method void androidx.compose.runtime.snapshots.SnapshotStateList.update$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+10-21 11:25:58.163 I/TestRunner( 6777): run started: 1 tests
+10-21 11:25:58.164 I/TestRunner( 6777): started: walkThroughEveryScreen(com.mithun.latchscan.UiFlowTest)
+10-21 11:25:58.306 W/ithun.latchscan( 6777): Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+10-21 11:25:58.309 W/ithun.latchscan( 6777): Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+10-21 11:25:58.309 W/ithun.latchscan( 6777): Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+10-21 11:25:58.392 W/ithun.latchscan( 6777): Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+10-21 11:25:58.392 W/ithun.latchscan( 6777): Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+10-21 11:25:58.393 W/ithun.latchscan( 6777): Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+10-21 11:25:58.851 I/ActivityTaskManager(  478): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.mithun.latchscan/.MainActivity} from uid 10174
+10-21 11:25:59.005 D/CoreBackPreview(  478): Window{b8945b0 u0 Splash Screen com.mithun.latchscan}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@e488761, mPriority=0}
+10-21 11:25:59.092 D/LifecycleMonitor( 6777): Lifecycle status change: com.mithun.latchscan.MainActivity@ec1d379 in: PRE_ON_CREATE
+10-21 11:25:59.550 D/LifecycleMonitor( 6777): Lifecycle status change: com.mithun.latchscan.MainActivity@ec1d379 in: CREATED
+10-21 11:25:59.574 V/ActivityScenario( 6777): Update currentActivityStage to CREATED, currentActivity=com.mithun.latchscan.MainActivity@ec1d379
+10-21 11:25:59.577 D/LifecycleMonitor( 6777): Lifecycle status change: com.mithun.latchscan.MainActivity@ec1d379 in: STARTED
+10-21 11:25:59.577 V/ActivityScenario( 6777): Update currentActivityStage to STARTED, currentActivity=com.mithun.latchscan.MainActivity@ec1d379
+10-21 11:25:59.581 D/LifecycleMonitor( 6777): Lifecycle status change: com.mithun.latchscan.MainActivity@ec1d379 in: RESUMED
+10-21 11:25:59.584 V/ActivityScenario( 6777): Update currentActivityStage to RESUMED, currentActivity=com.mithun.latchscan.MainActivity@ec1d379
+10-21 11:26:00.507 D/CoreBackPreview(  478): Window{d717028 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@6e4ead2, mPriority=0}
+10-21 11:26:03.864 W/ziparchive(  478): Unable to open '/data/app/~~fAiRBzbcl960y1WYCxNGlA==/com.mithun.latchscan-sIq8_EZjiEvJRUcxtWyJlg==/base.dm': No such file or directory
+10-21 11:26:03.896 D/ProfileInstaller( 6777): Installing profile for com.mithun.latchscan
+10-21 11:26:03.920 I/ActivityTaskManager(  478): Displayed com.mithun.latchscan/.MainActivity: +5s1ms
+10-21 11:26:04.034 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:26:04.548 D/CoreBackPreview(  478): Window{b8945b0 u0 Splash Screen com.mithun.latchscan EXITING}: Setting back callback null
+10-21 11:26:04.587 W/InputManager-JNI(  478): Input channel object 'b8945b0 Splash Screen com.mithun.latchscan (client)' was disposed without first being removed with the input manager!
+10-21 11:26:06.482 I/ithun.latchscan( 6777): Background concurrent copying GC freed 40315(3378KB) AllocSpace objects, 11(9500KB) LOS objects, 49% free, 6482KB/12MB, paused 604us,34us total 150.380ms
+10-21 11:26:07.456 I/Nearby  ( 6894): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:26:07.793 I/Nearby  ( 6894): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:26:08.072 I/Nearby  ( 6894): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:26:08.107 I/Nearby  ( 6894): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:26:08.165 I/Nearby  ( 6894): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:26:08.366 I/Nearby  ( 6894): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:26:08.479 I/Nearby  ( 6894): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:26:08.524 I/Nearby  ( 6894): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:26:09.009 I/Nearby  ( 6894): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:26:10.492 I/Nearby  ( 6894): is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-21 11:26:18.424 D/CoreBackPreview(  478): Window{b9083a9 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@ea99aeb, mPriority=0}
+10-21 11:26:18.670 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:26:19.999 D/CoreBackPreview(  478): Window{b9083a9 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback null
+10-21 11:26:20.019 W/InputManager-JNI(  478): Input channel object 'b9083a9 com.mithun.latchscan/com.mithun.latchscan.MainActivity (client)' was disposed without first being removed with the input manager!
+10-21 11:26:20.047 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:26:20.366 D/CoreBackPreview(  478): Window{da50a89 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@6f6eacb, mPriority=0}
+10-21 11:26:20.788 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:26:21.952 I/ithun.latchscan( 6777): NativeAlloc concurrent copying GC freed 91948(3681KB) AllocSpace objects, 15(2484KB) LOS objects, 49% free, 7864KB/15MB, paused 136us,6us total 269.013ms
+10-21 11:26:21.964 D/CoreBackPreview(  478): Window{da50a89 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback null
+10-21 11:26:21.968 W/InputManager-JNI(  478): Input channel object 'da50a89 com.mithun.latchscan/com.mithun.latchscan.MainActivity (client)' was disposed without first being removed with the input manager!
+10-21 11:26:22.043 W/ithun.latchscan( 6777): Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateMap.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:26:22.043 W/ithun.latchscan( 6777): Method void androidx.compose.runtime.snapshots.SnapshotStateMap.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:26:22.043 W/ithun.latchscan( 6777): Method boolean androidx.compose.runtime.snapshots.SnapshotStateMap.removeIf$runtime_release(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-21 11:26:22.337 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:26:22.602 I/ithun.latchscan( 6777): Compiler allocated 4355KB to compile void android.view.ViewRootImpl.performTraversals()
+10-21 11:26:26.169 I/AndroidRuntime( 7324): VM exiting with result code 0, cleanup skipped.
+10-21 11:26:26.777 I/AndroidRuntime( 7345): VM exiting with result code 0, cleanup skipped.
+10-21 11:26:26.979 I/AndroidRuntime( 7366): VM exiting with result code 0, cleanup skipped.
+10-21 11:26:27.152 I/AndroidRuntime( 7384): VM exiting with result code 0, cleanup skipped.
+10-21 11:26:27.161 D/CoreBackPreview(  478): Window{dd404d9 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@879929b, mPriority=0}
+10-21 11:26:27.400 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:26:28.347 W/ithun.latchscan( 6777): Cleared Reference was only reachable from finalizer (only reported once)
+10-21 11:26:28.380 I/ithun.latchscan( 6777): NativeAlloc concurrent copying GC freed 51077(2119KB) AllocSpace objects, 10(200KB) LOS objects, 49% free, 7952KB/15MB, paused 49us,7us total 179.880ms
+10-21 11:26:28.456 D/CoreBackPreview(  478): Window{dd404d9 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback null
+10-21 11:26:28.476 W/InputManager-JNI(  478): Input channel object 'dd404d9 com.mithun.latchscan/com.mithun.latchscan.MainActivity (client)' was disposed without first being removed with the input manager!
+10-21 11:26:28.524 I/GoogleInputMethodService( 1479): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.mithun.latchscan fieldId=-1 fieldName=null extras=null}, false)
+10-21 11:26:34.656 I/AndroidRuntime( 7475): VM exiting with result code 0, cleanup skipped.
+10-21 11:26:34.967 I/AndroidRuntime( 7501): VM exiting with result code 0, cleanup skipped.
+10-21 11:26:35.108 I/AndroidRuntime( 7520): VM exiting with result code 0, cleanup skipped.
+10-21 11:26:38.611 I/CameraService(  414): CameraService::connect call (PID 6777 "com.mithun.latchscan", camera ID 1) and Camera API version 2
+10-21 11:26:38.743 I/Camera2ClientBase(  414): Camera 1: Opened. Client: com.mithun.latchscan (PID 6777, UID 10174)
+10-21 11:26:38.901 I/ithun.latchscan( 6777): NativeAlloc concurrent copying GC freed 154877(6473KB) AllocSpace objects, 2(40KB) LOS objects, 49% free, 8343KB/16MB, paused 119us,5us total 147.668ms
+10-21 11:26:39.642 W/ithun.latchscan( 6777): Long monitor contention with owner CameraX-camerax_high_priority (7560) at androidx.camera.core.ImageProxy androidx.camera.core.AndroidImageReaderProxy.acquireLatestImage()(AndroidImageReaderProxy.java:76) waiters=0 in void androidx.camera.core.AndroidImageReaderProxy.lambda$setOnImageAvailableListener$1$androidx-camera-core-AndroidImageReaderProxy(java.util.concurrent.Executor, androidx.camera.core.impl.ImageReaderProxy$OnImageAvailableListener, android.media.ImageReader) for 126ms
+10-21 11:26:41.346 W/ithun.latchscan( 6777): Long monitor contention with owner CameraX-camerax_high_priority (7560) at androidx.camera.core.ImageProxy androidx.camera.core.AndroidImageReaderProxy.acquireLatestImage()(AndroidImageReaderProxy.java:76) waiters=0 in void androidx.camera.core.AndroidImageReaderProxy.lambda$setOnImageAvailableListener$1$androidx-camera-core-AndroidImageReaderProxy(java.util.concurrent.Executor, androidx.camera.core.impl.ImageReaderProxy$OnImageAvailableListener, android.media.ImageReader) for 181ms
+10-21 11:26:44.605 I/ithun.latchscan( 6777): NativeAlloc concurrent copying GC freed 37291(1680KB) AllocSpace objects, 2(120KB) LOS objects, 49% free, 10MB/21MB, paused 84us,9us total 481.310ms
+10-21 11:26:45.376 W/ithun.latchscan( 6777): Long monitor contention with owner pool-4-thread-1 (7561) at com.mithun.latchscan.scanner.CornerModel$Result com.mithun.latchscan.scanner.CornerModel.predict(org.opencv.core.Mat)(CornerModel.kt:33) waiters=0 in com.mithun.latchscan.scanner.CornerModel$Result com.mithun.latchscan.scanner.CornerModel.predict(org.opencv.core.Mat) for 1.338s
+10-21 11:26:49.367 W/ithun.latchscan( 6777): Long monitor contention with owner DefaultDispatcher-worker-1 (6845) at com.mithun.latchscan.scanner.CornerModel$Result com.mithun.latchscan.scanner.CornerModel.predict(org.opencv.core.Mat)(CornerModel.kt:33) waiters=0 in com.mithun.latchscan.scanner.CornerModel$Result com.mithun.latchscan.scanner.CornerModel.predict(org.opencv.core.Mat) for 3.709s
+10-21 11:26:52.961 I/ithun.latchscan( 6777): Compiler allocated 4300KB to compile void com.mithun.latchscan.scanner.CropScreenKt.CropEditor(java.io.File, com.mithun.latchscan.data.Quad, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function0, androidx.compose.runtime.Composer, int)
+10-21 11:26:53.149 I/CameraService(  414): CameraService::connect call (PID 6777 "com.mithun.latchscan", camera ID 1) and Camera API version 2
+10-21 11:26:53.149 I/Camera2ClientBase(  414): Camera 1: Opened. Client: com.mithun.latchscan (PID 6777, UID 10174)
+10-21 11:26:53.166 W/ithun.latchscan( 6777): Suspending all threads took: 8.908ms
+10-21 11:26:53.195 I/ithun.latchscan( 6777): NativeAlloc concurrent copying GC freed 74052(2817KB) AllocSpace objects, 32(8376KB) LOS objects, 49% free, 9755KB/19MB, paused 4.446ms,9.312ms total 194.804ms
+10-21 11:26:53.208 I/Camera2ClientBase(  414): Closed Camera 1. Client was: com.mithun.latchscan (PID 6777, UID 10174)
+10-21 11:26:57.160 W/ithun.latchscan( 6777): Long monitor contention with owner CameraX-core_camera_0 (7450) at void android.hardware.camera2.impl.CameraDeviceImpl.close()(CameraDeviceImpl.java:1436) waiters=0 in void android.hardware.camera2.impl.CameraDeviceImpl$CameraDeviceCallbacks.onCaptureStarted(android.hardware.camera2.impl.CaptureResultExtras, long) for 165ms
+10-21 11:27:00.080 I/ithun.latchscan( 6777): Compiler allocated 8142KB to compile void com.mithun.latchscan.ui.DocumentScreenKt.DocumentScreen(java.lang.String, kotlin.jvm.functions.Function0, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function0, androidx.compose.runtime.Composer, int)
+10-21 11:27:00.899 I/ActivityTaskManager(  478): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} from uid 10174
+10-21 11:27:00.933 D/LifecycleMonitor( 6777): Lifecycle status change: com.mithun.latchscan.MainActivity@ec1d379 in: PAUSED
+10-21 11:27:00.933 V/ActivityScenario( 6777): Update currentActivityStage to PAUSED, currentActivity=com.mithun.latchscan.MainActivity@ec1d379
+10-21 11:27:01.031 D/CoreBackPreview(  478): Window{c39cfa9 u0 Splash Screen com.mithun.latchscan.test}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@b1f3c48, mPriority=0}
+10-21 11:27:01.192 D/CoreBackPreview(  478): Window{4135e8d u0 com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@5e8b053, mPriority=0}
+10-21 11:27:02.748 D/WindowManager(  478): relayoutVisibleWindow: Window{c39cfa9 u0 Splash Screen com.mithun.latchscan.test EXITING} mAnimatingExit=true, mRemoveOnExit=true, mDestroying=false
+10-21 11:27:02.950 D/LifecycleMonitor( 6777): Lifecycle status change: com.mithun.latchscan.MainActivity@ec1d379 in: STOPPED
+10-21 11:27:02.993 V/ActivityScenario( 6777): Update currentActivityStage to STOPPED, currentActivity=com.mithun.latchscan.MainActivity@ec1d379
+10-21 11:27:03.016 D/LifecycleMonitor( 6777): Lifecycle status change: com.mithun.latchscan.MainActivity@ec1d379 in: DESTROYED
+10-21 11:27:03.033 D/CoreBackPreview(  478): Window{d717028 u0 com.mithun.latchscan/com.mithun.latchscan.MainActivity}: Setting back callback null
+10-21 11:27:03.168 W/InputManager-JNI(  478): Input channel object 'd717028 com.mithun.latchscan/com.mithun.latchscan.MainActivity (client)' was disposed without first being removed with the input manager!
+10-21 11:27:03.193 I/TestRunner( 6777): finished: walkThroughEveryScreen(com.mithun.latchscan.UiFlowTest)
+10-21 11:27:03.337 I/TestRunner( 6777): run finished: 1 tests, 0 failed, 0 ignored
+10-21 11:27:03.641 D/CoreBackPreview(  478): Window{c39cfa9 u0 Splash Screen com.mithun.latchscan.test EXITING}: Setting back callback null
+10-21 11:27:03.641 W/InputManager-JNI(  478): Input channel object 'c39cfa9 Splash Screen com.mithun.latchscan.test (client)' was disposed without first being removed with the input manager!
+10-21 11:27:03.875 D/CoreBackPreview(  478): Window{4135e8d u0 com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}: Setting back callback null
+10-21 11:27:04.073 W/InputManager-JNI(  478): Input channel object '4135e8d com.mithun.latchscan.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-21 11:27:04.253 I/ActivityManager(  478): Force stopping com.mithun.latchscan appid=10174 user=0: finished inst
+10-21 11:27:04.264 I/ActivityManager(  478): Killing 6777:com.mithun.latchscan/u0a174 (adj 0): stop com.mithun.latchscan due to finished inst
+10-21 11:27:04.755 I/AndroidRuntime( 6744): VM exiting with result code 0.
+10-21 11:27:05.309 I/Camera2ClientBase(  414): Closed Camera 1. Client was: com.mithun.latchscan (PID 6777, UID 10174)
+10-21 11:27:05.314 V/ActivityManager(  478): Got obituary of 6777:com.mithun.latchscan
