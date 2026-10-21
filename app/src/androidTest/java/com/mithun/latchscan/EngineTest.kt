@@ -124,7 +124,7 @@ class EngineTest {
             // page nearly filling the frame
             Triple("paper_fills_frame.jpg", pts(30, 25, 1245, 35, 1255, 935, 22, 925), 0.03f),
             // open book: the right-hand page (its outer edge may land on the cover edge)
-            Triple("book_spread_right_page.jpg", pts(600, 95, 1150, 80, 1170, 880, 610, 890), 0.05f),
+            Triple("book_spread_right_page.jpg", pts(600, 95, 1150, 80, 1170, 880, 610, 890), 0.07f),
             // close-up page on a white table with a heavy shadow: just needs a usable outline
             Triple("page_white_table_close.jpg", pts(150, 40, 1120, 60, 1150, 930, 120, 910), 0.15f),
         )

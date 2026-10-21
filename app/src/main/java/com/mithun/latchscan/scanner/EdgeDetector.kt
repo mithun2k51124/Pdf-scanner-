@@ -343,6 +343,8 @@ object EdgeDetector {
                 val q = Quad.ordered(pts.map { Pt((it.x / w).toFloat().coerceIn(0f, 1f), (it.y / h).toFloat().coerceIn(0f, 1f)) })
                 val area = abs(q.area()).toDouble()
                 if (area < 0.15 || area > 0.97 || !q.isValid()) continue
+                // A page cut off by the edge of the picture isn't the page the user is aiming at.
+                if (q.points.count { it.x < 0.03f || it.y < 0.03f || it.x > 0.97f || it.y > 0.97f } >= 2) continue
                 val px = q.points.map { Point(it.x.toDouble() * w, it.y.toDouble() * h) }.toTypedArray()
                 val sides = (0 until 4).map { singleSide(px[it], px[(it + 1) % 4], sup, w, h) }
                 val minSide = sides.min()
