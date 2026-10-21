@@ -1,0 +1,56 @@
+name: Model eval
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/model-eval/**"
+      - ".github/workflows/model-eval.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: pip install onnxruntime opencv-python-headless numpy gdown
+      - name: Get DocAligner models (Apache-2.0, DocsaidLab)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view models-v1 >/dev/null 2>&1; then
+            gh release download models-v1 -p "*.onnx"
+          else
+            gdown 1IlbLPkCv-TdaBLOPh_4J97P1_KHYYJ7a -O lcnet100.onnx
+            gdown 1W88oOkHjMza6xXbDxrG8k_C-Tf2aYKJ4 -O fastvit_t8.onnx
+            gdown 14vUH77v6yGg7zFctUgcT6BzV5Iisg4Dl -O fastvit_sa24.onnx
+            ls -la *.onnx
+            gh release create models-v1 lcnet100.onnx fastvit_t8.onnx fastvit_sa24.onnx --prerelease \
+              --title "Detection models v1" \
+              --notes "DocAligner heatmap corner models by DocsaidLab (Apache License 2.0), https://github.com/DocsaidLab/DocAligner. Bundled into the app at build time."
+          fi
+          ls -la *.onnx
+      - name: Real test photos (from public scanner projects)
+        run: |
+          mkdir -p ext
+          git clone -q --depth 1 https://github.com/andrewdcampbell/OpenCV-Document-Scanner.git ext_a
+          git clone -q --depth 1 https://github.com/ColonelParrot/jscanify.git ext_b
+          mkdir -p ext/a ext/b
+          cp ext_a/sample_images/{cell_pic.jpg,chart.JPG,desk.JPG,dollar_bill.JPG,receipt.jpg,math_cheat_sheet.JPG,notepad.JPG} ext/a/ || true
+          cp ext_b/docs/images/test/{test.png,test10.jpg,test2.png} ext/b/ || true
+      - name: Evaluate
+        run: python tools/model-eval/eval.py lcnet100.onnx fastvit_t8.onnx fastvit_sa24.onnx
+      - name: Publish results to ci-artifacts
+        if: always()
+        run: |
+          cp -r out "$RUNNER_TEMP/out"
+          git config user.name "latch-ci"; git config user.email "latch-ci@users.noreply.github.com"
+          git fetch -q origin ci-artifacts && git checkout -q -B ci-artifacts origin/ci-artifacts || git checkout -q --orphan ci-artifacts
+          rm -rf model-eval && mkdir -p model-eval && cp -r "$RUNNER_TEMP/out/." model-eval/
+          git add -A model-eval && git commit -qm "Model eval ${{ github.run_number }}" && git push -q origin HEAD:ci-artifacts
