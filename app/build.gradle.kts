@@ -88,6 +88,7 @@ dependencies {
     implementation("androidx.camera:camera-view:$camerax")
 
     implementation("org.opencv:opencv:4.12.0")
+    implementation("com.microsoft.onnxruntime:onnxruntime-android:1.22.0")
     implementation("com.tom-roush:pdfbox-android:2.0.27.0")
     implementation("io.coil-kt:coil-compose:2.7.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
@@ -102,3 +103,19 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
+
+// The document corner model (DocAligner lcnet100, Apache-2.0) is ~5 MB, so it lives in a
+// GitHub release instead of git. It is downloaded once before the first build.
+val fetchModels by tasks.registering {
+    val out = file("src/main/assets/models/lcnet100.onnx")
+    outputs.file(out)
+    doLast {
+        if (!out.exists() || out.length() < 1_000_000) {
+            out.parentFile.mkdirs()
+            val url = uri("https://github.com/mithun2k51124/Pdf-scanner-/releases/download/models-v1/lcnet100.onnx").toURL()
+            url.openStream().use { input -> out.outputStream().use { input.copyTo(it) } }
+            println("Downloaded corner model: ${out.length()} bytes")
+        }
+    }
+}
+tasks.named("preBuild") { dependsOn(fetchModels) }

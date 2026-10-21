@@ -103,6 +103,39 @@ class EngineTest {
     }
 
     @Test
+    fun cornerModelLoadsAndRuns() {
+        val model = com.mithun.latchscan.scanner.CornerModel.get()
+        assertNotNull("corner model failed to load", model)
+        val bgr = org.opencv.core.Mat()
+        org.opencv.android.Utils.bitmapToMat(asset("white_on_white_blur.jpg"), bgr)
+        org.opencv.imgproc.Imgproc.cvtColor(bgr, bgr, org.opencv.imgproc.Imgproc.COLOR_RGBA2BGR)
+        val r = model!!.predict(bgr)
+        assertNotNull(r)
+        assertEquals(4, r!!.corners.size)
+        bgr.release()
+    }
+
+    @Test
+    fun detectsHardPagesWithTheCornerModel() {
+        fun pts(vararg v: Int) = v.toList().chunked(2).map { (x, y) -> Pt(x / 1280f, y / 960f) }
+        val cases = listOf(
+            // white paper on a white table, motion blur and sensor noise
+            Triple("white_on_white_blur.jpg", pts(330, 120, 930, 150, 960, 880, 300, 860), 0.03f),
+            // page nearly filling the frame
+            Triple("paper_fills_frame.jpg", pts(30, 25, 1245, 35, 1255, 935, 22, 925), 0.03f),
+            // open book: the right-hand page (its outer edge may land on the cover edge)
+            Triple("book_spread_right_page.jpg", pts(600, 95, 1150, 80, 1170, 880, 610, 890), 0.05f),
+            // close-up page on a white table with a heavy shadow: just needs a usable outline
+            Triple("page_white_table_close.jpg", pts(150, 40, 1120, 60, 1150, 930, 120, 910), 0.15f),
+        )
+        for ((name, truth, tol) in cases) {
+            val q = EdgeDetector.detect(asset(name))
+            assertNotNull("no page found in $name", q)
+            q!!.points.zip(truth).forEach { (a, e) -> assertTrue("$name expected $e got $a", e.dist(a) < tol) }
+        }
+    }
+
+    @Test
     fun findsNothingInAnEmptyScene() {
         val bmp = Bitmap.createBitmap(800, 600, Bitmap.Config.ARGB_8888).apply { eraseColor(Color.DKGRAY) }
         assertEquals(null, EdgeDetector.detect(bmp))

@@ -27,7 +27,7 @@ Every push to `main` builds a new APK and AAB automatically (see [Actions](../..
 - **Auto mode.** Live edge detection (OpenCV) draws a yellow outline that springs onto the page. When the page has held still for about a second, the app takes the photo: the shutter ring fills up, then the flash, haptic tick and shutter sound fire. Swap in the next page and it captures again, so multi-page assignments go quickly.
 - **Manual mode.** Toggle **Auto / Manual** at the top. Take the photo yourself, then drag the four corners or any edge to crop. A magnifier shows what's under your finger, *Auto* re-detects the edges, and *Full image* resets the crop.
 - **Front & back mode.** Guided capture of the front, then the back, with a flip animation. You can keep the two sides as separate pages or put both on one A4 page, ID-card style.
-- **Filters:** Magic (removes shadows, whitens paper, keeps colour ink), Grayscale, B&W, Original. Apply one page at a time or to every page.
+- **Filters:** Original (the default), Magic (removes shadows, whitens paper, keeps colour ink), Gray, B&W. Apply one page at a time or to every page.
 - Rotate, re-crop, delete and drag-to-reorder pages. Torch, tap-to-focus, and import from the gallery (photos are auto-cropped too).
 
 ### Your scans
@@ -54,11 +54,16 @@ Requirements: Android Studio (Ladybug or newer) or JDK 17 plus the Android SDK.
 ./gradlew testReleaseUnitTest  # unit tests
 ```
 
-Stack: Kotlin, Jetpack Compose (Material 3), CameraX, OpenCV 4, PdfBox-Android, Coil. minSdk 24 (Android 7.0), targetSdk 35.
+Stack: Kotlin, Jetpack Compose (Material 3), CameraX, OpenCV 4, ONNX Runtime (DocAligner corner model), PdfBox-Android, Coil. The model file is downloaded automatically on the first build (see `fetchModels` in `app/build.gradle.kts`). Licences: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). minSdk 24 (Android 7.0), targetSdk 35.
 
 ### How auto-capture works
-1. CameraX streams 640×480 frames to an analyzer, which reads only the brightness plane.
-2. `EdgeDetector` shrinks each frame to 480 px and blurs it. It then builds three edge maps (two Canny sensitivities and an Otsu threshold) and keeps the largest convex four-corner shape that covers at least 12% of the frame and doesn't hug the frame border.
+1. CameraX streams 640×480 colour frames to an analyzer, which turns each one upright.
+2. Three detectors look for the page together:
+   - **Corner AI**: the DocAligner heatmap network (~5 MB, ONNX Runtime). It copes with white paper on white tables, clutter and soft shadows.
+   - **Contour detector** (OpenCV): it finds precise edges, including pages that nearly fill the frame.
+   - **Line detector**: if the AI sees a page but some corners are hidden (an open book), it builds the page from straight edges and the book's gutter.
+
+   When the AI and the contours agree, the contour corners are used, because they sit exactly on the paper edge.
 3. The screen springs the outline toward each new detection. Once every corner stays within ~2% for 1.1 s, the app takes a full-resolution photo, re-detects the corners on it, and perspective-warps the page.
 4. Auto mode won't fire again until the page is removed or moved, so you won't get duplicates.
 

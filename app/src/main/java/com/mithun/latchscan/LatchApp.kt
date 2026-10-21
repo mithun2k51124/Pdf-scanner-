@@ -9,6 +9,7 @@ import com.mithun.latchscan.util.Files
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.launch
 import com.tom_roush.pdfbox.android.PDFBoxResourceLoader
 import org.opencv.android.OpenCVLoader
 
@@ -53,6 +54,8 @@ class LatchApp : Application() {
         repository = DocumentRepository(this)
         session = ScanSession(this)
         Files.cleanCache(this)
+        // Warm up the corner model so the first camera frames are fast.
+        appScope.launch(Dispatchers.Default) { com.mithun.latchscan.scanner.CornerModel.get() }
     }
 
     companion object {

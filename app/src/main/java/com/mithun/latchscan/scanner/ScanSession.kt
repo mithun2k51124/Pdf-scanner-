@@ -72,7 +72,7 @@ class ScanSession(context: Context) : PageHost {
      * Stores a captured photo and produces its cropped/filtered page. Must be called from
      * the main thread (the side and busy counter are claimed before switching threads).
      */
-    suspend fun addCapture(bitmap: Bitmap, quad: Quad?, filter: Filter = Filter.ENHANCED): Page {
+    suspend fun addCapture(bitmap: Bitmap, quad: Quad?, filter: Filter = Filter.ORIGINAL): Page {
         val side = nextSide()
         pendingSides.add(side)
         busy++
@@ -109,7 +109,7 @@ class ScanSession(context: Context) : PageHost {
                 bmp?.let { it to EdgeDetector.detect(it) }
             } ?: continue
             val (bmp, quad) = loaded
-            addCapture(bmp, quad, if (quad != null) Filter.ENHANCED else Filter.ORIGINAL)
+            addCapture(bmp, quad, Filter.ORIGINAL)
             bmp.recycle()
             ok++
         }

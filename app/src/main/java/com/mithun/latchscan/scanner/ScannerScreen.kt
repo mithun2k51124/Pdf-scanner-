@@ -389,6 +389,7 @@ private fun CameraContent(
                         .build(),
                 )
                 .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
+                .setOutputImageFormat(ImageAnalysis.OUTPUT_IMAGE_FORMAT_RGBA_8888)
                 .build()
             analysis.setAnalyzer(analysisExecutor, analyzer)
             provider.unbindAll()
@@ -401,8 +402,9 @@ private fun CameraContent(
     DisposableEffect(Unit) {
         onDispose {
             runCatching { ProcessCameraProvider.getInstance(context).get().unbindAll() }
+            // Free native buffers on the analysis thread, after any frame in flight.
+            analysisExecutor.execute { analyzer.release() }
             analysisExecutor.shutdown()
-            analyzer.release()
             sound.release()
         }
     }
@@ -410,6 +412,8 @@ private fun CameraContent(
     val detection by analyzer.detections.collectAsState()
     var capturing by remember { mutableStateOf(false) }
     val tracker = remember { LatchTracker(holdMs = HOLD_MS, tolerance = STABLE_TOLERANCE) }
+    var searchingSince by remember { mutableStateOf<Long?>(null) }
+    var searchingLong by remember { mutableStateOf(false) }
     var holdProgress by remember { mutableFloatStateOf(0f) }
     val flash = remember { Animatable(0f) }
     var toast by remember { mutableStateOf<String?>(null) }
@@ -438,7 +442,7 @@ private fun CameraContent(
             holdProgress = 0f
             if (!session.autoCapture && !fromAuto) {
                 // No outline found: keep the photo's real colours until the user crops it.
-                val page = session.addCapture(bmp, quad ?: Quad.inset(0.04f), if (quad != null) Filter.ENHANCED else Filter.ORIGINAL)
+                val page = session.addCapture(bmp, quad ?: Quad.inset(0.04f), Filter.ORIGINAL)
                 bmp.recycle()
                 withContext(Dispatchers.Main) { onCrop(page.id) }
             } else {
@@ -472,6 +476,13 @@ private fun CameraContent(
     LaunchedEffect(detection) {
         val d = detection ?: return@LaunchedEffect
         val state = tracker.update(d.quad, d.timeMs, autoState)
+        if (d.quad == null) {
+            val since = searchingSince ?: d.timeMs.also { searchingSince = it }
+            searchingLong = d.timeMs - since > 4000
+        } else {
+            searchingSince = null
+            searchingLong = false
+        }
         holdProgress = state.progress
         if (state.capture && !capturing && imageCapture != null) {
             scope.launch { doCapture(fromAuto = true) }
@@ -541,7 +552,7 @@ private fun CameraContent(
                         .background(Color.White),
                 )
                 HintPill(
-                    text = toast ?: hintText(detection?.quad != null, auto, holdProgress, session.mode, session.nextSide(), cameraError),
+                    text = toast ?: hintText(detection?.quad != null, auto, holdProgress, session.mode, session.nextSide(), cameraError, searchingLong),
                     modifier = Modifier
                         .align(Alignment.TopCenter)
                         .padding(top = 14.dp),
@@ -568,8 +579,9 @@ private fun CameraContent(
     }
 }
 
-private fun hintText(found: Boolean, auto: Boolean, progress: Float, mode: CaptureMode, side: Side, error: String?): String = when {
+private fun hintText(found: Boolean, auto: Boolean, progress: Float, mode: CaptureMode, side: Side, error: String?, searchingLong: Boolean): String = when {
     error != null -> error
+    !found && searchingLong -> "Fit the whole page in view, or tap the shutter and drag the corners"
     !found && mode == CaptureMode.FRONT_BACK && side == Side.BACK -> "Flip the page over and place the back side"
     !found -> "Looking for a page…"
     !auto -> "Page found — tap the shutter"

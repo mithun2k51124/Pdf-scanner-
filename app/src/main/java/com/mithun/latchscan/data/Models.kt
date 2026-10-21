@@ -99,7 +99,7 @@ data class Page(
     val original: String,
     val quad: Quad = Quad.FULL,
     val rotation: Int = 0,
-    val filter: Filter = Filter.ENHANCED,
+    val filter: Filter = Filter.ORIGINAL,
     val side: Side = Side.NONE,
     /** Bumped every time the processed image is regenerated (cache key for thumbnails). */
     val rev: Long = System.currentTimeMillis(),
